@@ -28,16 +28,16 @@
   vertical-align: top;
  }
  #circles-secion .item .image{
-  width: 70px;
-  height: 65px;
-  padding: 13px;
+  width: 70%;
+  height: 0;
+  padding: 35% 0;
   min-width: none;
  }
  #circles-secion .item .image img{
-  width: 85%;
+  width: 50%;
     position: absolute;
-    top: 6%;
-    left: 9%;
+    top: 8%;
+    left: 25%;
     max-width: none;
  }
  #circles-secion .item .info{
