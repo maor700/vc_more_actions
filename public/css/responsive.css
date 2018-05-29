@@ -1,0 +1,77 @@
+@media (min-width:1024px) {}
+@media (max-width: 1023px) {}
+@media (min-width: 768px) {
+
+}
+@media (max-width:767px) {
+ .listing.grid .item.even {
+  float: none;
+ }
+
+ #recommended-con .card-con{
+  width: 47%;
+  max-width: none;
+ }
+
+#circles-secion{
+ font-size: 0.8em;
+}
+ #circles-secion h2{
+  font-size: 3em;
+  padding-bottom: 0.1em;
+ }
+ 
+ #circles-secion .item{
+  width: 32%!important;
+  float: none;
+  display: inline-block;
+  vertical-align: top;
+ }
+ #circles-secion .item .image{
+  width: 70px;
+  height: 65px;
+  padding: 13px;
+  min-width: none;
+ }
+ #circles-secion .item .image img{
+  width: 85%;
+    position: absolute;
+    top: 6%;
+    left: 9%;
+    max-width: none;
+ }
+ #circles-secion .item .info{
+  
+ }
+
+}
+@media (max-width: 767px) and (min-width: 320px){
+ #boxes-section .listing.grid .item {
+  width: 100%!important;
+  clear: both;
+  float: none;
+  min-height: auto;
+ }
+ #recommended-con{
+  text-align: center;
+ }
+}
+@media (max-width:400px) {
+ #boxes-section .listing.grid .item {
+  margin: 0.5em;
+  min-height: auto;
+  max-height: none;
+  background: white;
+ }
+
+ .box-con .img-con {
+
+  padding: 1em;
+  padding-top: 1em;
+  width: 15%;
+ }
+
+ .box-con ul {
+  width: 60%;
+ }
+}

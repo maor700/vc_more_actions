@@ -1,0 +1,445 @@
+
+/* 	--------------------------------------------------
+    The Origin Framework ™  - uSkinned.net
+
+	PALETTE
+    -------------------------------------------------- */
+
+
+/* 	--------------------------------------------------
+	TABLE OF CONTENTS
+    -------------------------------------------------- 
+
+	1.0 BACKGROUNDS
+	2.0 TEXT
+	3.0 BORDERS
+	4.0 BUTTONS
+	
+	
+	PRIMARY COLOUR
+	HEX		#8bc435
+	RGBA	rgba(139,196,53,1)
+	
+	dark		background-color:#2c2d2f; background-color:rgba(44,45,47,1);
+	grey1		background-color:#efefef; background-color:rgba(239,239,239,1);
+	grey2		background-color:#e3e3e3; background-color:rgba(227,227,227,1);
+	white		background-color:#ffffff; background-color:rgba(255,255,255,1);
+	
+*/
+
+
+
+/*	--------------------------------------------------
+	1.0 BACKGROUNDS
+	-------------------------------------------------- */
+	
+	body {
+		background-color:#222325; background-color:rgba(34,35,37,1);
+		}
+	.white_bg,	
+	#site,
+	table,
+	fieldset div.general input,
+	fieldset div.general select,
+	fieldset div.general textarea {
+		background-color:#ffffff; background-color:rgba(255,255,255,1);
+		}
+	.grey1_bg,
+	table tbody tr.even td,
+	.pricing_tables ol,
+	nav.sub ul li ul { 
+		background-color:#efefef; background-color:rgba(239,239,239,1);
+		}
+	nav.pagination ul li::after,
+	.grey2_bg,	
+	.alert_box,
+	footer,
+	.pricing_tables ol li.price,
+	.tabbed nav ul li a::after,
+	.accordion .tab a::after,
+	nav.sub ul li a:hover,
+	.resources .item p.heading::after {
+		background-color:#e3e3e3; background-color:rgba(227,227,227,1);
+		}
+	nav.pagination ul li:hover::after,
+	nav.pagination ul li.active::after,	
+	nav.sub ul li a.active,
+	.green_bg,		
+	.label,
+	.navigation a.expand span,
+	.cookies,
+	.tabbed nav ul li a.active::after,
+	.tabbed nav ul li a:hover::after,
+	.accordion .tab a.active::after,
+	.accordion .tab a:hover::after,
+	.resources .item a:hover p.heading::after {	
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}
+	.dark_bg,
+	thead {
+		background-color:#2c2d2f; background-color:rgba(44,45,47,1);
+		}	
+		
+	fieldset div.general input.input-validation-error,
+	fieldset div.general select.input-validation-error,
+	fieldset div.general textarea.input-validation-error,
+	fieldset .error span.wrap input,
+	fieldset .error span.wrap select,
+	fieldset .error span.wrap textarea,
+	fieldset .error ul {	
+		background-color:#ffebeb; background-color:rgba(255,235,235,1);
+		}
+	
+	/* ALERTS */		
+	.alert_box.green {
+		background-color:#7FAE00; background-color:rgba(127,174,0,1);
+		}
+	.alert_box.amber {
+		background-color:#ecce56; background-color:rgba(236,206,86,1);
+		}
+	.alert_box.red,
+	fieldset div.general span.field-validation-error,
+	fieldset .error span.req {
+		background-color:#e72020; background-color:rgba(231,32,32,1);
+		}
+		
+	.ajax_wrap .ajax_loading {
+		background-color:#ffffff; background-color:rgba(255,255,255,0.8);
+		}
+	.ajax_wrap .ajax_loading .loading span.message {
+		background-image:url('/images/icons/loading_on_white.gif');
+		}
+		
+	.slideshow .text,
+	.image .text {
+		background-color:#000000; background-color:rgba(0,0,0,0.6);
+		}
+	.overlayicon {
+		background-color:#000000; background-color:rgba(0,0,0,0.3);
+		}
+	
+	@media (min-width:1024px) {
+		
+	nav.main ul li a.active,
+	nav.main ul li a.active:hover,
+	nav.main ul li ul a.active:hover,
+	.navigation nav.main ul li ul li a:hover,
+	.navigation nav.main ul li ul li a.active {
+		background-color:rgba(255,255,255,0.1);
+		}
+	.navigation nav.top ul li.login:hover,
+	.navigation nav.top ul li.login.active,
+	.navigation nav.top ul li a:hover,
+	nav.main ul li:hover a,
+	nav.main ul li a:hover,
+	nav.main ul li.has_child a.active:hover,
+	.navigation nav.main ul li ul {
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}
+	.navigation nav.main ul li ul ul {
+		}
+			
+	nav.main ul ul,
+	.navigation nav.top ul li.login div.form {
+		box-shadow:0 5px 0 0 rgba(0,0,0,0.1);
+		}
+	
+	nav.top .form {
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}
+	
+	}	
+		
+	@media (max-width:1023px) {	
+		
+	.navigation nav.main ul li i {
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}	
+	.navigation nav.main ul li.open i {
+		}	
+	.navigation nav.main ul li.open li i {
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}
+	.navigation nav.main ul li ul li.open i {
+		}	
+		
+	.navigation nav.main ul li > a.active {
+		background-color:rgba(0,0,0,0.5);
+		}
+	.navigation nav.main ul li li > a.active {
+		background-color:rgba(0,0,0,0.25);
+		}
+	.navigation nav.main ul li li li > a.active {
+		background-color:rgba(0,0,0,0.1);
+		}
+		
+	header, header .navigation, header .reveal {
+		background-color:#2c2d2f; background-color:rgba(44,45,47,1);
+		}
+	
+	nav.top .form {
+		background-color:#222325; background-color:rgba(34,35,37,1);
+		}	
+		
+	.navigation a.expand {
+		background-color:#8bc435; background-color:rgba(139,196,53,1);
+		}
+	.navigation a.expand span {
+		background-color:#ffffff; background-color:rgba(255,255,255,1);
+		}
+	
+	}
+
+
+
+/*	--------------------------------------------------
+	2.0 TEXT
+	-------------------------------------------------- */
+
+	body,
+	.listing .item a .text,
+	.dark_bg .promo_pods .item.grey1_bg, .dark_bg .promo_pods .item.grey2_bg {
+		color:#494a4c; color:rgba(73,74,76,1);
+		}
+	a,	
+	.highlight,
+	a h1, a h2, a h3, a h4, a h5, a h6, a .heading,
+	nav.footer .site_credit a,
+	.promo_pods .item a.see_all,
+	nav.pagination ul li.active {
+		color:#8bc435; color:rgba(139,196,53,1);
+		}
+	a:link { 
+		-webkit-tap-highlight-color: #8bc435; -webkit-tap-highlight-color:rgba(139,196,53,1); 
+		}
+	a .overlayicon i,	
+	nav.sub ul li a.active,	
+	thead,
+	.label,
+	.alert_box.green,
+	.alert_box.amber,
+	.alert_box.red,
+	fieldset div.general span.field-validation-error,
+	fieldset .error span.req,
+	.slideshow .text,
+	.image .text,
+	.cookies a, .cookies p, .cookies p.heading,
+	.navigation nav a,
+	.slick-prev, .slick-next,
+	.dark_bg h1, .dark_bg h2, .dark_bg h3, .dark_bg h4, .dark_bg h5, .dark_bg h6, 
+	.green_bg h1, .green_bg h2, .green_bg h3, .green_bg h4, .green_bg h5, .green_bg h6, 
+	.dark_bg, .dark_bg a, .dark_bg .heading, .promo_pods .item.dark_bg a, .promo_pods .item.dark_bg a, .promo_pods .item.dark_bg a .heading, .dark_bg .promo_pods .item a .heading, .dark_bg .promo_pods .item .heading a, .dark_bg a .heading, .dark_bg .heading a,
+	.green_bg, .green_bg a, .green_bg .heading, .promo_pods .item.green_bg a, .promo_pods .item.green_bg a, .promo_pods .item.green_bg a .heading, .green_bg a .heading, .green_bg .heading a,
+	.dark_bg .listing .item a, .green_bg .listing .item a, .dark_bg .listing .item a .heading, .green_bg .listing .item a .heading, .dark_bg .listing .item a .text, .green_bg .listing .item a .text,
+	.dark_bg nav.tabs a, .green_bg nav.tabs a {
+		color:#ffffff; color:rgba(255,255,255,1);
+		}
+	h1, h2, h3, h4, h5, h6, .heading,
+	abbr, acronym,
+	.alert_box a.close,
+	fieldset .general input:focus,
+	fieldset .general select:focus,
+	fieldset .general textarea:focus,
+	nav.sub a,
+	nav.tabs a,
+	.accordion .tab a,
+	.listing .item a .heading,
+	.promo_pods .item a .heading, .promo_pods .item a,
+	.resources .item a p.heading,
+	nav.pagination ul li a,
+	.dark_bg .promo_pods .item.grey1_bg a, .dark_bg .promo_pods .item.grey2_bg a, .dark_bg .promo_pods .item.grey1_bg a .heading, .dark_bg .promo_pods .item.grey2_bg a .heading {
+		color:#222325; color:rgba(34,35,37,1);
+		}
+	.subheading,
+	blockquote, 
+	blockquote p,
+	blockquote cite,
+	nav.breadcrumb ul,
+	nav.pagination ul,
+	nav.sitemap ul,
+	fieldset div.general input,
+	fieldset div.general select,
+	fieldset div.general textarea,
+	.resources .item a .text,
+	.resources .item a .size { 
+		color:#777777; color:rgba(119,119,119,1);
+		}
+	fieldset span.note {
+		color:#999999; color:rgba(153,153,153,1);
+		}
+	span.price,
+	fieldset label em.req {
+		color:#ff0000; color:rgba(255,0,0,1);
+		}
+		
+		
+	@media (max-width:1023px) {	
+		
+	.navigation nav.main ul li.open i {
+		}	
+	.navigation nav.main ul li.open li i {
+		color:#ffffff; color:rgba(255,255,255,1);
+		}
+	.navigation nav.main ul li ul li.open i {
+		}	
+		
+	.navigation nav.main ul li i {
+		color:#ffffff; color:rgba(255,255,255,1);
+		}
+		
+	}
+	
+	
+
+/*	--------------------------------------------------
+	3.0 BORDERS
+	-------------------------------------------------- */
+
+	.borders,
+	.alert_box,
+	hr,
+	abbr, acronym,
+	nav.footer,
+	.tabbed nav ul,
+	.tabbed nav ul li a,
+	.tabbed nav ul li.last a,
+	.tabbed .panes,
+	.accordion .tab a,
+	.accordion .pane,
+	.resources .item,
+	.pricing_tables ol,
+	.pricing_tables ol li,
+	.pricing_tables ol li.feature,
+	fieldset div.general input,
+	fieldset div.general select,
+	fieldset div.general textarea,
+	fieldset .checkbox ul,
+	fieldset .radiobutton ul,
+	fieldset .checkbox ul li,
+	fieldset .radiobutton ul li,
+	div.meta,
+	.promo_pods .item .listing,
+	.promo_pods .item .listing .item,.promo_pods .item .listing .heading  {
+		border-color:#dddddd;
+		}	
+	.accordion .tab {
+		border-color:#ffffff;
+		}
+	.tabbed nav ul li a.active {
+		border-bottom-color:#ffffff;
+		}
+	blockquote,
+	fieldset .general input:focus,
+	fieldset .general select:focus,
+	fieldset .general textarea:focus {
+		border-color:#8bc435;
+		}
+	fieldset div.general input.input-validation-error,
+	fieldset div.general select.input-validation-error,
+	fieldset div.general textarea.input-validation-error,
+	fieldset .error span.wrap input,
+	fieldset .error span.wrap select,
+	fieldset .error span.wrap textarea,
+	fieldset .error ul {	
+		border-color:#ff0000;
+		}
+	
+	/* ALERTS */		
+	.alert_box.green {
+		border-color:#7FAE00;
+		}
+	.alert_box.amber {
+		border-color:#ecce56;
+		}
+	.alert_box.red {
+		border-color:#e72020;
+		}
+		
+	@media (min-width:1024px) {
+		
+	.navigation nav.main ul li ul li a {
+		border-color:rgba(0,0,0,0.1);
+		}
+	.navigation nav.main ul li ul li a:hover {
+		border-color:rgba(0,0,0,0.3);
+		}
+	.navigation nav.main ul li ul li a.active {
+		border-color:rgba(0,0,0,1);
+		}
+			
+	}	
+	
+	@media (max-width:1023px) {
+	
+	header .phone,
+	.navigation nav.main ul li i,
+	.navigation nav.main ul, .navigation nav.main ul li,
+	.navigation nav.main ul li.open ul,	.navigation nav.main ul li ul li.open ul {
+		border-color: #ffffff; border-color:rgba(255,255,255,0.1);
+		}	
+		
+	}
+	
+	
+
+/*	--------------------------------------------------
+	4.0 BUTTONS
+	-------------------------------------------------- */
+	
+	span.button a,
+	button.button {
+		background-color: #8bc435; background-color:rgba(139,196,53,1);
+		border-color:#8bc435; border-color:rgba(139,196,53,1);
+		}
+	span.button.green a,
+	button.button.green {
+		background-color:#7FAE00; background-color:rgba(127,174,0,1);
+		border-color:#7FAE00; border-color:rgba(127,174,0,1);
+		}
+	span.button.amber a,
+	button.button.amber {
+		background-color:#F68B01; background-color:rgba(246,139,1,1);
+		border-color:#F68B01; border-color:rgba(246,139,1,1);
+		}
+	span.button.red a,
+	button.button.red {
+		background-color:#C00000; background-color:rgba(192,0,0,1);
+		border-color:#C00000; border-color:rgba(192,0,0,1);
+		}
+	span.button.grey a,
+	button.button.grey {
+		background-color:#999999; background-color:rgba(153,153,153,1);
+		border-color:#999999; border-color:rgba(153,153,153,1);
+		}
+	span.button.black a,
+	button.button.black {
+		background-color:#000000; background-color:rgba(0,0,0,1);
+		border-color:#000000; border-color:rgba(0,0,0,1);
+		}
+	span.button.white a,
+	button.button.white {
+		background-color:#ffffff; background-color:rgba(255,255,255,1);
+		border-color:#ffffff; border-color:rgba(255,255,255,1);
+		color:#000000; color:rgba(0,0,0,1);
+		}
+		
+	span.button.transparent a,
+	button.button.transparent {
+		background:transparent; border:0 none;
+		}	
+		
+	span.button a:hover,
+	button.button:hover {
+		
+		-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+
+
+
+/*	--------------------------------------------------
+	END
+	-------------------------------------------------- */
+	
+

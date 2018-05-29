@@ -1,0 +1,3158 @@
+
+/* 	--------------------------------------------------
+    The Origin Framework ™  - uSkinned.net
+
+	LAYOUT
+    -------------------------------------------------- */
+
+
+/* 	--------------------------------------------------
+	TABLE OF CONTENTS
+    -------------------------------------------------- 
+
+	1.0 GENERAL
+	2.0 CONTENT
+	3.0 HEADER
+	4.0 FOOTER
+	5.0 NAVIGATION
+		5.1 MAIN
+		5.2 TOP
+		5.3 SUB
+		5.4 BREADCRUMB
+		5.5 PAGINATION
+		5.6 SITEMAP
+		5.7 SOCIAL
+		5.8 QUICK LINKS
+		5.9 FOOTER NAVIGATION
+		5.10 SLICK CAROUSEL NAVIGATION
+	6.0 BANNER
+	7.0 PROMO PODS
+		7.1 HOME PODS
+		7.2 WIDE COLUMN PODS
+		7.3 PROMO STRIP PODS
+		7.4 PROMO POD BLOCKS
+	8.0 LISTING
+		8.1 BLOG LISTING
+		8.2 SEARCH LISTING
+		8.3 SECTION LISTING
+		8.4 GRID LISTING
+		8.5 PROMO POD LISTING
+	9.0 BOX
+	10.0 PAGE COMPONENT
+		10.1 TABBED
+		10.2 ACCORDION
+		10.3 QUOTES
+		10.4 IMAGES
+		10.5 GALLERY
+		10.6 RESOURCES
+		10.7 TABLES
+		10.8 COMMENTS
+		10.9 AUTHOR BIO
+		10.10 IMAGE SLIDESHOW
+		10.11 PRICING TABLES
+	11.0 FORMS
+		11.1 BUTTONS
+		11.2 AJAX LOADING
+		11.3 ALERTS
+		11.4 COOKIES
+	
+*/
+
+
+
+/*	----------------------------------------------------------------------------------------------------
+	1.0 GENERAL
+	---------------------------------------------------------------------------------------------------- */
+	
+	body { 
+		}	
+	#site {
+		margin:0 auto;
+		}
+	
+	.rounded {
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+		}
+	.rounded_top {
+		-moz-border-radius:5px 5px 0 0;
+		-webkit-border-radius:5px 5px 0 0;
+		border-radius:5px 5px 0 0;
+		}	
+	.rounded_right {
+		-moz-border-radius:0 5px 5px 0;
+		-webkit-border-radius:0 5px 5px 0;
+		border-radius:0 5px 5px 0;
+		}
+	.rounded_bottom {
+		-moz-border-radius:0 0 5px 5px;
+		-webkit-border-radius:0 0 5px 5px;
+		border-radius:0 0 5px 5px;
+		}		
+	.rounded_left {
+		-moz-border-radius:5px 0 0 5px;
+		-webkit-border-radius:5px 0 0 5px;
+		border-radius:5px 0 0 5px;
+		}
+		
+	.promo_pods,
+	.listing,
+	.component {
+		clear:both;
+		}
+
+	
+	@media (min-width:1024px) {
+		
+	body { 
+		padding-top:40px;
+		}
+		
+	}
+
+
+
+/*	----------------------------------------------------------------------------------------------------
+	2.0 CONTENT
+	---------------------------------------------------------------------------------------------------- */
+	
+	.content { 
+		padding:1em 0;
+		}
+	.content.main {
+		}	
+	body.home .content {
+		}
+	body.inner .content {
+		}
+	.content #left_col { 
+		}
+	.content #right_col { 
+		}
+	.content #mid_col { 
+		}
+			
+	@media (min-width:1024px) {
+		
+	.content { 
+		padding:3em 0;
+		}
+		
+	.content #left_col.span4 .sub,
+	.content #left_col.span4 .promo_pods {
+		padding-right:2.5em;
+		}
+	.content #right_col.span4 .sub,
+	.content #right_col.span4 .promo_pods {
+		padding-left:2.5em;
+		}
+		
+	.content #left_col.span3 .sub,
+	.content #left_col.span3 .promo_pods {
+		padding-right:1em;
+		}
+	.content #right_col.span3 .sub,
+	.content #right_col.span3 .promo_pods {
+		padding-left:1em;
+		}
+		
+	}
+			
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.content { 
+		padding:2em 0;
+		}
+	.content #left_col.span4 .sub,
+	.content #left_col.span4 .promo_pods {
+		padding-right:1em;
+		}
+	.content #right_col.span4 .sub,
+	.content #right_col.span4 .promo_pods {
+		padding-left:1em;
+		}
+		
+	.content #left_col.span3 .sub,
+	.content #left_col.span3 .promo_pods {
+		padding-right:0.5em;
+		}
+	.content #right_col.span3 .sub,
+	.content #right_col.span3 .promo_pods {
+		padding-left:0.5em;
+		}
+	
+	}
+	
+	@media (max-width:767px) {
+	
+	.content #left_col,
+	.content #mid_col {
+		padding-bottom:2em;
+		}
+		
+	}
+
+
+
+/*	----------------------------------------------------------------------------------------------------
+	4.0 HEADER
+	---------------------------------------------------------------------------------------------------- */
+
+	header {
+		overflow:hidden;
+		}
+	header .row {
+		padding:0;
+		}
+	header #logo { 
+		position:absolute; top:20px; left:0; z-index:301;
+		}
+	header #logo a { 
+		width:135px;height:40px;
+		display:block;
+		text-indent:-9999px;
+		background-image:url('/images/logo.png');
+		background-repeat:no-repeat;
+		background-position:left bottom;
+		}
+	header #logo a:active {
+		position:relative;
+		top:1px;
+		}
+		
+	header .phone {
+		position:absolute; left:0;
+		font-size:12px; font-size:1.2rem;
+		}
+		
+			
+	@media (min-width:1024px) {
+	
+	header {
+		overflow:visible;
+		height:110px;
+		z-index:500;
+		}
+	header #logo { 
+		top:35px;
+		}
+		
+	header .phone {
+		position:absolute; top:-30px; left:0;
+		}
+		
+	}
+	
+	@media (max-width:1023px) {
+	
+	header {
+		height:60px;
+		}
+	header .container, 
+	header .row {
+		width:100%; max-width:100%;
+		}
+	header #logo { 
+		top:0; left:15px;
+		margin:10px 0 0;
+		position:relative;
+		float:left;
+		}
+	header #logo a { 
+		background-image:url('/images/logo.png');
+		}
+		
+	header .phone {
+		height:28px; top:60px; right:0; 
+		padding:12px 15px 0;
+		border-width:1px 0 0; border-style:solid;
+		}
+		
+	}
+	
+	@media (max-width:479px) { 
+		
+	header #logo { 
+		left:10px;
+		}
+		
+	}
+
+	@media 
+	only screen and (-webkit-min-device-pixel-ratio : 1.5), 
+	only screen and (min-device-pixel-ratio : 1.5), 
+	only screen and (-webkit-min-device-pixel-ratio : 2), 
+	only screen and (min-device-pixel-ratio : 2) {
+	
+	header #logo a {
+		background-image: url('/images/logo_retina.png');
+		background-size:135px 40px;
+		}
+	
+	}
+
+
+
+/*	----------------------------------------------------------------------------------------------------
+	4.0 FOOTER
+	---------------------------------------------------------------------------------------------------- */
+	
+	footer { 
+		padding:1em 0 2em;
+		}
+			
+	@media (min-width:1024px) {
+		
+	footer { 
+		padding:3em 0;
+		}
+		
+	}
+			
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	footer { 
+		padding:2em 0;
+		}
+		
+	}
+			
+	@media (max-width:767px) {
+		
+	footer .social {
+		padding:1em 0 2em;
+		}	
+		
+	}
+                            
+                            
+                            
+/*  ----------------------------------------------------------------------------------------------------
+    5.0 NAVIGATION             
+    ---------------------------------------------------------------------------------------------------- */
+     
+	.navigation {
+		position:relative; z-index:5;
+		}
+	.navigation a.expand {
+		position:absolute; top:0; right:0; z-index:300;
+		width:60px; height:60px;
+		display:block;
+		text-indent:-9999px;
+		}		
+	.navigation a.expand span {
+		height:4px; 
+		display:block;
+		width:30px;
+		position:absolute;
+		left:15px;
+		}
+	.navigation a.expand span.top {
+		top:18px;
+		}
+	.navigation a.expand span.mid {
+		top:28px;
+		}
+	.navigation a.expand span.bottom {
+		top:38px;
+		}
+	.navigation a.expand.active span.mid {
+		display:none;
+		}
+	.navigation a.expand.active span.top,
+	.navigation a.expand.active span.bottom {
+		top:27px;
+		}
+	.navigation a.expand.active span.top {
+		transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-webkit-transform:rotate(-45deg); 
+		-moz-transform:rotate(-45deg);
+		}
+	.navigation a.expand.active span.bottom {		
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-webkit-transform:rotate(45deg); 
+		-moz-transform:rotate(45deg);
+		}
+					
+	@media (min-width:1024px) {
+
+	.navigation a.expand {
+		display:none;
+		}
+	.navigation .reveal {
+		display:block!important;
+		}
+		
+	}			
+					
+	@media (max-width:1023px) {
+
+	html.reveal_out {/*
+		overflow-y:hidden;*/
+		}	
+		
+	html.reveal_out header {
+		z-index:301;/*
+		position:fixed; top:0; right:0; bottom:0; left:0;
+		overflow-y:scroll!important;*/
+		width:100%; height:100%;
+		}
+	html.reveal_out header:after {    
+		content: "";
+    	display: block;
+    	clear: both;
+    	visibility: hidden;
+    	font-size: 0;
+    	height: 0;
+    	}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.1 MAIN NAV             
+    -------------------------------------------------- */
+		
+	.navigation nav.main {
+		}
+	.navigation nav.main ul {
+		}
+	.navigation nav.main ul li {
+		position:relative;
+		font-size:15px; font-size:1.5rem;
+		}
+	.navigation nav.main ul ul li {
+		font-size:12px; font-size:1.2rem;
+		}
+	.navigation nav.main ul li a {
+		text-decoration:none;
+		}
+		
+			
+	@media (min-width:1024px) {
+	
+	nav.main {
+		height:40px;
+		position:relative; top:30px; right:0;
+		z-index:300;
+		}
+	nav.main ul {
+		float:right;
+		z-index:400;
+		overflow:visible;
+		line-height:1;
+		}
+	.navigation nav.main ul li,
+	.navigation nav.main ul ul li {
+		font-size:14px; font-size:1.4rem;
+		}
+	nav.main ul li {
+		float:left;
+		display:inline;
+		position:relative;
+		}
+	nav.main ul li a {
+		display:block;
+		float:left;
+		height:50px;
+		padding:30px 15px 0;
+		}
+	nav.main ul li a:hover,
+	nav.main ul li:hover a {
+		}
+	nav.main ul li:hover a.active,
+	nav.main ul li a.active:hover {
+		}
+
+	/* DROP DOWN 2ND LEVEL */
+	.navigation nav.main ul li ul {
+		position: absolute;
+		left: -999em;
+		top: 80px;
+		z-index: 2000;
+		width: 240px;
+		height:auto;
+		padding:0;
+		display:block;
+		border-top:0;
+		}
+	.navigation nav.main ul li ul li {
+		float: none;
+		width: auto;
+		display:block;
+		border:0 none!important;
+		}
+	.navigation nav.main ul li ul li a {
+		float: none;
+		display: block;
+		height:auto;
+		width:auto;
+		line-height:1.3;
+		padding:15px;
+		margin:0;
+		border-width:0 0 0 3px; border-style:solid;
+		}
+	.navigation nav.main ul li ul li a span { 
+		display:block;
+		}
+
+	.navigation nav.main ul li:hover ul ul,
+	.navigation nav.main ul li.hover ul ul {
+		left: -999em;
+		padding:0;
+		border-top:0;
+		}
+	.navigation nav.main ul li:hover ul ul li a.active,
+	.navigation nav.main ul li.hover ul ul li a.active {
+		}
+	.navigation nav.main ul li.hover ul ul li a span {
+		background:none!important;
+		}
+
+	.navigation nav.main ul li li:hover ul,
+	.navigation nav.main ul li li.hover ul {
+		top:0; right:240px; left:auto;
+		}
+
+	/* Hover effects */
+	/* Method of popping out the sub-section */
+	.navigation nav.main ul li:hover ul,
+	.navigation nav.main ul li.hover ul {
+		right:0; left:auto;
+		}
+		
+	}
+	
+	@media (max-width:1023px) {
+		
+	.navigation nav.main {
+		padding-top:100px;
+		}
+	.navigation nav.main ul {
+		position:relative;
+		clear:both;
+		text-align:left;
+		border-width:1px 0 1px; border-style:solid;
+		}
+	.navigation nav.main ul ul,	
+	.navigation nav.main ul li.open ul ul {
+		display:none;
+		}
+	.navigation nav.main ul li.open ul,	
+	.navigation nav.main ul li ul li.open ul {
+		display:block;
+		border-width:1px 1px 0 0; border-style:solid;
+		}
+	.navigation nav.main ul li {
+		display:block;
+		border-width:0 0 1px; border-style:solid;
+		}
+	.navigation nav.main ul li.has_child {
+		padding-right:59px;
+		}
+	.navigation nav.main ul li.last {
+		border:0 none;
+		}
+	.navigation nav.main ul li a {
+		display:block;
+		height:35px; padding:15px 1em 0;
+		}
+	.navigation nav.main ul li i {
+		width:59px; height:50px;	
+   		display:block;
+		position:absolute; top:0; right:0;
+		border-width:0 0 0 1px; border-style:solid;
+		cursor:pointer;
+		text-align:center;
+		margin:0!important;
+		}
+	.navigation nav.main ul li i.fa::before	{
+		position:absolute; top:18px; left:26px;
+		}
+	.navigation nav.main ul li a i { 
+		display:none!important; 
+		}
+	
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.2 TOP NAVIGATION             
+    -------------------------------------------------- */
+
+	.navigation nav.top { 
+		}
+	.navigation nav.top ul { 
+		overflow:visible;
+		font-size:12px; font-size:1.2rem;
+		}
+	.navigation nav.top ul li {
+		position:relative;
+		}
+	.navigation nav.top ul li a {
+		}
+	.navigation nav.top ul li a span {
+		}
+		
+	.navigation nav.top ul li.logout a,
+	.navigation nav.top ul li.logout div {
+		display:inline-block; float:none;
+		}
+	.navigation nav.top ul li.logout div {
+		
+		-webkit-opacity:0.7;
+		-moz-opacity:0.7;
+		-ms-opacity:0.7;
+		-o-opacity:0.7;
+		opacity:0.7;
+		}
+		
+	.navigation nav.top ul li.login div.form {
+		padding:1em;
+		}
+	.navigation nav.top ul li.login div.form .heading {
+		font-size:16px; font-size:1.6rem;
+		}
+			
+	@media (min-width:1024px) {
+		
+	.navigation nav.top { 
+		position:absolute; z-index:302; top:-40px; right:0;
+		}
+	.navigation nav.top ul { 
+		font-size:12px; font-size:1.2rem;
+		}
+	.navigation nav.top ul li {
+		display:inline;
+		float:left;
+		}
+	.navigation nav.top ul li a {
+		display:block;
+		float:left;
+		padding:10px 15px 0;
+		height:30px;
+		}
+	.navigation nav.top ul li a span {
+		}
+	.navigation nav.top ul li.logout div {
+		padding:10px 0 0;
+		height:30px;
+		}
+		
+	.navigation nav.top ul li.login div.form {
+		position:absolute; top:40px; left:-999em; z-index:302;
+		width:220px;
+		}
+	.navigation nav.top ul li.login.active div.form {
+		right:0; left:auto;
+		}
+		
+	}
+	
+	@media (max-width:1023px) {
+		
+	.navigation nav.top > ul {
+		position:relative;
+		clear:both;
+		padding:15px;
+		}
+	.navigation nav.top ul li {
+		display:block;
+		}
+	.navigation nav.top ul li a {
+		display:inline-block;
+		padding:10px 0;
+		}
+		
+	.navigation nav.top ul li.login a {
+		display:none;
+		}
+	.navigation nav.top ul li.login div.form {
+		margin-top:1em;
+		}
+	.navigation nav.top ul li.login .form a {
+		display:inline-block;
+		}
+	
+	}
+		                     
+                            
+                            
+/*  --------------------------------------------------
+    5.3 SUB NAVIGATION             
+    -------------------------------------------------- */
+
+	nav.sub {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		margin-bottom:2em;
+		}
+	nav.sub p.heading {
+		padding-left:15px;
+		font-size:16px; font-size:1.6rem;
+		}
+	nav.sub p.heading a { 
+		}
+	nav.sub p.heading a span { 
+		}
+	nav.sub ul {
+		font-size:12px; font-size:1.2rem;
+		}
+	nav.sub ul li {
+		display:inline;
+		}
+	nav.sub ul li.first { 
+		}
+	nav.sub ul li.last { 
+		}
+	nav.sub ul li a {
+		display:block;
+		padding:1em;
+		padding-left:15px;
+		}
+	nav.sub ul li.first a { 
+		}
+	nav.sub ul li.last a {
+		border:0 none;
+		}
+	nav.sub ul li.odd a { 
+		}
+	nav.sub ul li.even a { 
+		}
+	nav.sub ul li a:hover {
+		}
+	nav.sub ul li a.active {
+		position:relative;
+		bottom:0;
+		}
+	nav.sub ul li a span {
+		display:block;
+		}
+		
+	nav.sub ul li.has_child a span {
+		}
+		
+	nav.sub ul li ul {
+		border:0 none;
+		padding:0; text-transform:none; letter-spacing:0;
+		}
+	nav.sub ul li.last ul {
+		}
+	nav.sub ul li ul li {
+		}
+		
+	@media (min-width:1024px) {
+		
+	nav.sub ul li a {
+		
+		-webkit-transition: padding 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-moz-transition: padding 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: padding 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-o-transition: padding 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: padding 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+	nav.sub ul li a:hover {
+		padding-left:20px;
+		}
+		
+	}	
+	
+                            
+                            
+/*  --------------------------------------------------
+    5.4 BREADCRUMB NAVIGATION             
+    -------------------------------------------------- */
+
+	nav.breadcrumb { 
+		overflow:hidden;
+		height:100%;
+		position:relative;
+		}
+	nav.breadcrumb ul { 
+		font-size:11px; font-size:1.1rem;
+		}
+	nav.breadcrumb ul li {
+		display:inline;
+		float:left;
+		margin-right:5px;
+		}
+	nav.breadcrumb ul li a {
+		display:block;
+		float:left;
+		}
+	nav.breadcrumb ul li a span {
+		
+		}
+	nav.breadcrumb ul li div {
+		display:block;
+		float:left;
+		}
+	nav.breadcrumb i.fa {
+		margin:0;
+		}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.5 PAGINATION NAVIGATION             
+    -------------------------------------------------- */
+
+	nav.pagination {
+		overflow:hidden;
+		height:100%;
+		position:relative;
+		margin:3em 0;
+		}
+	nav.pagination.post {
+		}
+	nav.pagination ul { 
+		text-align:center;
+		}
+	nav.pagination ul li {
+		min-width:35px;
+		display:inline-block;
+		}
+	nav.pagination ul li.prev,
+	nav.pagination ul li.next {
+		position:absolute;
+		float:none;
+		margin:0;
+		}
+	nav.pagination ul li.prev {
+		left:0;
+		}
+	nav.pagination ul li.next {
+		right:0;
+		}
+		
+	nav.pagination ul li::after {
+		content:"";
+		display:block;
+		width:20px; height:2px; margin:-2px auto 0;
+		
+		-webkit-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-moz-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-o-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+	nav.pagination ul li.prev::after {
+		margin-left:0;
+		}
+	nav.pagination ul li.next::after {
+		margin-right:0;
+		}
+	nav.pagination ul li:hover::after {
+		width:30px;
+		}
+	nav.pagination ul li.active::after {
+		width:100%;
+		}
+		
+	nav.pagination ul li span {
+		padding:5px 10px 10px;
+		display:inline-block;
+		}
+	nav.pagination ul li.prev a span {
+		padding-left:0;
+		}
+	nav.pagination ul li.next a span {
+		padding-right:0;
+		}
+		
+	
+	@media (max-width:767px) {
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.6 SITEMAP NAVIGATION             
+    -------------------------------------------------- */
+
+	nav.sitemap {
+		overflow:hidden;
+		height:100%;
+		position:relative;
+		}
+	nav.sitemap ul { 
+		margin:0.5em 0 2em;
+		}
+	nav.sitemap ul li {
+		display:block;
+		padding:0 0 5px 14px;
+		background:url('/images/bg/sitemap_line.png') no-repeat left top;
+		}
+	nav.sitemap ul li a {
+		}
+	nav.sitemap ul li a span {
+		}
+	nav.sitemap ul li ul {
+		padding-bottom:5px;
+		margin-bottom:0;
+		}
+		
+	@media (min-width:1024px) {
+		
+	nav.sitemap ul li a {
+		
+		-webkit-transition: padding 0.25s ease-in-out;
+		-moz-transition: padding 0.25s ease-in-out;
+		-ms-transition: padding 0.25s ease-in-out;
+		-o-transition: padding 0.25s ease-in-out;
+		transition: padding 0.25s ease-in-out;
+		}
+	nav.sitemap ul li a:hover {
+		padding-left:5px;
+		}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.7 SOCIAL NAVIGATION        
+    -------------------------------------------------- */
+                    
+	.social nav { 
+		overflow:hidden;
+		height:100%;
+		position:relative;		
+		}
+	.social nav ul { 
+		}
+	.social nav ul li {
+		display:inline-block;
+		margin:0 2px 5px 0;
+		}
+	.social nav ul li.first { 
+		}
+	.social nav ul li.last {
+		}
+	.social nav ul li.odd { 
+		}
+	.social nav ul li.even {
+		}
+	
+	.social nav ul li a {
+		display:block;
+		text-indent:-9999px;
+		width:32px;
+		height:32px;
+		background-image:url('../images/icons/social.png');
+		background-repeat:no-repeat;
+		}
+	.social nav ul li.first a { 
+		}
+	.social nav ul li.last a { 
+		}
+	
+	.social nav ul li.facebook a {
+		background-position:left top;
+		}
+	.social nav ul li.twitter a {
+		background-position:left -32px;
+		}
+	.social nav ul li.linkedin a {
+		background-position:left -64px;
+		}
+	.social nav ul li.google_plus a {
+		background-position:left -96px;
+		}
+	.social nav ul li.pinterest a {
+		background-position:left -128px;
+		}
+	.social nav ul li.instagram a {
+		background-position:left -160px;
+		}
+	.social nav ul li.flickr a {
+		background-position:left -192px;
+		}
+	.social nav ul li.tumblr a {
+		background-position:left -224px;
+		}
+	.social nav ul li.vimeo a {
+		background-position:left -256px;
+		}
+	.social nav ul li.youtube a {
+		background-position:left -288px;
+		}
+	.social nav ul li.dribble a {
+		background-position:left -320px;
+		}
+	.social nav ul li.skype a {
+		background-position:left -352px;
+		}
+	.social nav ul li.rss a {
+		background-position:left -384px;
+		}  
+	
+	
+	                       
+/*  --------------------------------------------------
+    5.8 QUICK LINKS        
+    -------------------------------------------------- */
+        
+	.quick_links nav {
+		overflow:hidden;
+		height:100%;
+		}
+	.quick_links nav ul {
+		}
+	.quick_links nav ul li {
+		display:inline;
+		float:left;
+		width:49%;
+		margin-bottom:5px;
+		}
+	.quick_links nav ul li a {
+		display:block;
+		float:left;
+		} 
+		
+	.page_component.quick_links .box {
+		background-image:url('/images/icons/quick-links.png'); background-repeat:no-repeat; background-position:right bottom;
+		}
+	.page_component.quick_links nav ul li,
+	.page_component.quick_links nav ul li a {
+		display:block!important;
+		float:none!important;
+		}
+	.page_component.quick_links nav ul li {
+		margin-bottom:10px;
+		}
+		
+			
+	@media (min-width:1024px) {
+		
+	.quick_links nav ul li a i {
+		
+		-webkit-transition: margin 0.2s ease-in-out;
+		-moz-transition: margin 0.2s ease-in-out;
+		-ms-transition: margin 0.2s ease-in-out;
+		-o-transition: margin 0.2s ease-in-out;
+		transition: margin 0.2s ease-in-out;
+		}
+	.quick_links nav ul li a:hover i {
+		margin-right:8px;
+		}	
+		
+	}	
+			
+	@media (min-width:768px) {
+		
+	.quick_links nav ul li.even
+	.quick_links nav ul li.even a {
+		float:right;
+		}
+		
+	}
+			
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.quick_links nav ul li {
+		width:50%;
+		}
+		
+	}
+	
+	@media (max-width:767px) {
+		
+	footer .quick_links {
+		margin:1em 0;
+		}
+	.quick_links nav ul li {
+		}
+	.quick_links nav ul li.odd {
+		clear:both;
+		}
+	.quick_links nav ul li.even {
+		float:right;
+		}
+		
+	.page_component.quick_links nav ul li {
+		width:100%;
+		}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.9 FOOTER NAVIGATION             
+    -------------------------------------------------- */
+     
+	nav.footer {
+		padding:2em 0 0;
+		}
+	nav.footer ul {
+		font-size:11px; font-size:1.1rem;
+		}
+	nav.footer ul li {
+		float:left;
+		display:inline;
+		margin-right:10px;
+		margin-bottom:0;
+		}
+	nav.footer ul li.first {
+		}
+	nav.footer ul li.last {
+		}
+	nav.footer ul li a,
+	nav.footer ul li div {
+		display:inline-block;
+		}
+	nav.footer ul li.copyright {
+		}
+	nav.footer ul li.copyright a {
+		}
+	nav.footer ul li.back_to_top {
+		}
+	nav.footer ul li.back_to_top a {
+		}
+	nav.footer ul li.site_credit {
+		float:right;
+		margin-right:0;
+		}
+	nav.footer ul li.site_credit a {
+		}
+			
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	nav.footer ul li.site_credit {
+		clear:left;
+		float:right;
+		margin-top:-12px
+		}
+	nav.footer ul li.back_to_top {
+		clear:both;
+		margin-top:20px;
+		float:left;
+		}
+		
+	}
+	
+	@media (max-width:767px) {
+		
+	nav.footer ul li.copyright {
+		clear:both;
+		float:none;
+		display:block;
+		margin-bottom:20px;
+		}
+	nav.footer ul li.site_credit,
+	nav.footer ul li.back_to_top {
+		clear:both;
+		margin-top:20px;
+		float:left;
+		}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    5.10 SLICK CAROUSEL NAVIGATION            
+    -------------------------------------------------- */
+     
+	.slick-prev, .slick-next {
+		z-index:30;
+		width:50px;
+		height:50px;
+		position:absolute;
+		top:45%;
+		background:none;
+		border:0 none;
+		cursor:pointer;
+		z-index:200;
+		}
+	.slick-prev {
+		left:0;
+		}
+	.slick-next {
+		right:0;
+		}
+		
+	.slick-prev, .slick-next {		
+   		display: table;
+		}
+	.slick-prev i.fa, .slick-next i.fa {
+		position:relative;
+		margin:0!important;
+		display:block;
+		text-align:center;
+   		display: table-cell;
+   		vertical-align: middle;
+		}
+		
+		
+	.page_component .slick-prev, .page_component .slick-next {
+		top:40%;
+		}
+		
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.page_component .slick-prev, .page_component .slick-next {
+		top:35%;
+		}
+		
+	}
+		
+	@media (min-width:480px) and (max-width:767px) {
+		
+	.page_component .slick-prev, .page_component .slick-next {
+		top:35%;
+		}
+		
+	}	
+		
+	@media (max-width:479px) {
+		
+	.page_component .slick-prev, .page_component .slick-next {
+		top:30%;
+		}
+		
+	}
+        
+                            
+                               
+/*  ----------------------------------------------------------------------------------------------------
+    6.0 BANNER      
+    ---------------------------------------------------------------------------------------------------- */
+	
+	.banner {
+		overflow:hidden; height:100%;
+		position:relative; z-index:0;
+		}	
+	.banner .row {
+		margin-bottom:0;
+		}
+	.banner .slides {
+		overflow:hidden; height:100%; 
+		position:relative;
+		}
+	.banner .item {
+		overflow:hidden; height:100%; 
+		position:relative;
+		}
+	.banner .image {
+		position:relative!important;
+        z-index:-1!important;
+		}
+	.banner .image img {
+		display:block; overflow:hidden;
+		width:100%; height:auto;
+		}	
+		
+	.banner .item .info {
+		position:absolute; top:0; right:0; bottom:0; left:0; z-index:100;
+		}
+	.banner .item .info .container {
+		display:table; height:100%;
+		}
+	.banner .item .info .container .row {
+		display:table-cell; height:100%; vertical-align:middle;
+		}
+	.banner .item .info .heading {
+		padding:0 0 5px;
+		font-size:24px; font-size:2.4rem;
+		line-height:1.2;
+		}
+	.banner .item .info .text {
+		padding-bottom:15px;
+		}
+	.banner .item .info .text p {
+		padding:0;
+		}
+	.banner .item .info .link {
+		padding:0;
+		}
+		
+	@media (min-width:1024px) {
+		
+	.banner .item .info .text {
+		padding-bottom:30px;
+		}
+	.banner .item .info .heading {
+		padding-bottom:10px;
+		}
+		
+	}
+		
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.banner .item .info .heading {
+		padding-bottom:5px;
+		}
+		
+	}
+	
+	@media (min-width:768px) {
+		
+	.banner .item .info .heading {
+		font-size:30px; font-size:3.0rem;
+		}
+	.banner .item .info .text p {
+		font-size:16px; font-size:1.6rem;
+		}
+		
+	}
+		
+	@media (max-width:767px) {
+		
+	.banner, .banner .slides, .banner .slides .slick-list, .banner .slides .slick-list .slick-track, .banner .item {
+		height:210px;
+		}
+	body.home .banner, body.home .banner .slides, body.home .banner .slides .slick-list, body.home .banner .slides .slick-list .slick-track, body.home .banner .item {
+		height:320px;
+		}
+		
+	.banner .item .info {
+		padding:0 2em;
+		}
+	.banner .item .image {
+		position:absolute; right:0; bottom:0; left:0; width:270%;
+		}
+	.banner .item .image img {
+		margin:0 -31%;
+		}
+	.banner .item .span6 {
+		max-width:320px;
+		}
+		
+	}
+		
+	@media (max-height:320px) {
+		
+	body.home .banner, body.home .banner .slides, body.home .banner .slides .slick-list, body.home .banner .slides .slick-list .slick-track, body.home .banner .item {
+		height:260px;
+		}
+		
+	}
+		                          
+                            
+                            
+/*  ----------------------------------------------------------------------------------------------------
+    7.0 PROMO PODS         
+    ---------------------------------------------------------------------------------------------------- */
+
+	.promo_pods {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		margin-bottom:2em;
+		}
+	.promo_pods .item {
+		position:relative;
+		margin-bottom:1em;
+		background-repeat:no-repeat; background-position:left bottom;
+		}
+	.promo_pods .item .box {
+		padding-bottom:0;
+		}
+		
+	.promo_pods .item a {
+		}
+	.promo_pods .item.imagepod a,
+	.promo_pods .item.videopod a {
+		display:block;
+		}
+	.promo_pods .item a:hover .text {
+		text-decoration:none;
+		}
+		
+	.promo_pods .item .image {
+		margin:0 0 0.5em;
+		}		
+	.promo_pods .item img { 
+		display:block;
+		overflow:hidden;
+		}
+	.promo_pods .item.imagepod img,
+	.promo_pods .item.videopod img {
+		width:100%;			
+		margin:0;
+		}
+		
+	.promo_pods .item p.heading { 
+		display:block;
+		padding:0 0 0.5em;
+		font-size:16px; font-size:1.6rem;
+		}
+	.promo_pods .item .text { 
+		display:block;
+		padding-bottom:2em;
+		}
+	.promo_pods .item .text p {
+		padding:0;
+		}
+	.promo_pods .item .link { 
+		font-size:12px; font-size:1.2rem;
+		}
+
+	.promo_pods .item.videopod a .overlayicon {
+		display:block;
+		position:absolute;
+		top:0; right:0; bottom:0; left:0;	
+		text-align:center;
+		}
+	.promo_pods .item.videopod a .overlayicon i {
+		margin-top:27.5%;
+		}
+	
+	@media (min-width:1024px) {
+		
+	.promo_pods .item {
+		margin-bottom:2em;
+		}
+		
+	.promo_pods .item .link a i {
+		
+		-webkit-transition: margin 0.2s ease-in-out;
+		-moz-transition: margin 0.2s ease-in-out;
+		-ms-transition: margin 0.2s ease-in-out;
+		-o-transition: margin 0.2s ease-in-out;
+		transition: margin 0.2s ease-in-out;
+		}
+	.promo_pods .item .link a:hover i {
+		margin-left:8px;
+		}
+		
+	.promo_pods .item a .image,
+	.promo_pods .item.imagepod a,
+	.promo_pods .item.videopod a {
+		overflow:hidden;
+		}
+	.promo_pods .item a .image img,
+	.promo_pods .item.imagepod a img,
+	.promo_pods .item.videopod a img {
+		
+		-webkit-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+		-moz-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+		-ms-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+		-o-transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+		transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+		}
+	.promo_pods .item a .image:hover img,
+	.promo_pods .item.imagepod a:hover img,
+	.promo_pods .item.videopod a:hover img {
+		
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+		}
+		
+	}	
+	
+	@media (max-width:767px) {
+		/*
+	.promo_pods .item.imagepod,
+	.promo_pods .item.videopod {
+		min-height:150px;
+		}
+	.promo_pods .item .listing .item {
+		min-height:auto;
+		}*/
+		
+	.promo_pods .item .image img {
+		max-width:140px;
+		}
+	.promo_pods .item.imagepod .image img,
+	.promo_pods .item.videopod .image img {
+		max-width:100%;
+		}
+
+	}
+		                          
+                            
+                            
+/*  --------------------------------------------------
+    7.1 HOME PODS         
+    -------------------------------------------------- */
+
+	body.home .promo_pods {
+		}
+		                          
+                            
+                            
+/*  --------------------------------------------------
+    7.2 WIDE COLUMN PODS         
+    -------------------------------------------------- */
+
+	.promo_pods.wide {
+		}
+			
+	@media (min-width:768px) {
+
+	.promo_pods.wide .item.bookend-right {
+		margin-right:0;
+		}
+	.promo_pods.wide .item.bookend-left {
+		margin-left:0;
+		clear:both;									
+		}
+
+	}
+	
+	@media (min-width:480px) and (max-width:767px) {
+
+	.promo_pods.wide .item {
+		width:48%!important;
+		float:left!important;
+		display:block!important;
+		}
+	.promo_pods.wide .item.odd {
+		margin-left:0;
+		clear:both;
+		}
+	.promo_pods.wide .item.even {
+		margin-right:0;
+		float:right!important;
+		}
+		
+	}
+		                          
+                            
+                            
+/*  --------------------------------------------------
+    7.3 PROMO STRIP         
+    -------------------------------------------------- */
+
+	.promo_strip.promo_pods,
+	body.home .promo_strip.promo_pods {
+		margin:0;
+		}
+	.promo_strip.promo_pods .item,
+	body.home .promo_strip.promo_pods .item {
+		display:inline-block;
+		padding:2em 0;
+		}
+	.promo_strip.promo_pods .item .info,
+	body.home .promo_strip.promo_pods .item .info {
+		max-width:360px; margin:0 auto;
+		}
+	.promo_strip.promo_pods .item .heading,
+	body.home .promo_strip.promo_pods .item .heading {
+		font-size:20px; font-size:2.0rem;
+		}
+		
+	@media (min-width:768px) {
+		
+	.promo_strip.promo_pods .item,
+	body.home .promo_strip.promo_pods .item {
+		width:49%;
+		}
+	.promo_strip.promo_pods .item .info,
+	body.home .promo_strip.promo_pods .item .info {
+		padding:0 2em;
+		}
+		
+	}
+		                          
+                            
+                            
+/*  --------------------------------------------------
+    7.1 PROMO PODS BLOCKS        
+    -------------------------------------------------- */
+
+	.promo_pods.blocks {
+		margin-bottom:0;
+		}
+	.promo_pods.blocks .item {
+		height:180px;
+		margin-bottom:20px;
+		background-repeat:no-repeat; background-position:left bottom;
+		}
+	.promo_pods.blocks .item .inner {
+		padding:15px;
+		}
+	.promo_pods.blocks .item.video .inner {
+		padding:0;
+		}
+	.promo_pods.blocks .item.big,
+	.promo_pods.blocks .item.video {
+		padding:0;
+		}
+	.promo_pods.blocks .item.big,
+	.promo_pods.blocks .item.video {
+		background-position:center; background-size:cover;
+		}
+	.promo_pods.blocks .item.video a {
+		display:block;
+		height:150px;
+		padding:15px;
+		position:relative;
+		}
+	.promo_pods.blocks .item.video a::after {
+		content:"";
+		width:100%; height:100%;
+		position:absolute; top:0; right:0; bottom:0; left:0;
+		background-image:url('/images/icons/big-play.png'); background-repeat:no-repeat; background-position:center;
+		}
+	.promo_pods.blocks .item .link {
+		padding:0;
+		position:absolute; bottom:15px; left:15px; right:0;
+		}
+		
+	@media (min-width:768px) {
+		
+	.promo_pods.blocks .item {
+		margin-bottom:0;
+		}
+	.promo_pods.blocks .item.small.first {
+		margin-bottom:20px;
+		}
+	.promo_pods.blocks .item.med,
+	.promo_pods.blocks .item.big,
+	.promo_pods.blocks .item.video {
+		height:460px;
+		}
+	.promo_pods.blocks .item.video a {
+		height:430px;
+		}
+	.promo_pods.blocks .item.small {
+		height:220px;
+		}
+	.promo_pods.blocks .item.big .inner {
+		display:table; width:100%; height:100%;
+		}
+	.promo_pods.blocks .item.big .info {
+		display:table-cell; width:100%; height:100%; vertical-align:middle;
+		}
+	.promo_pods.blocks .item .heading {
+		font-size:24px; font-size:2.4rem;
+		padding:0 0 0.25em;
+		}
+	.promo_pods.blocks .item.big .link {
+		left:0; right:0;
+		}
+	.promo_pods.blocks .item .link {
+		left:15px;
+		}
+
+	.promo_pods.blocks .item.big .inner {
+		padding:0;
+		}
+	.promo_pods.blocks .item.big .inner .heading,
+	.promo_pods.blocks .item.big .inner .text {
+		padding-right:15px; padding-left:15px;				
+		}
+		
+	}
+		
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.promo_pods.blocks .item .heading {
+		font-size:18px; font-size:1.8rem;
+		}
+		
+	}	
+		
+	@media (min-width:480px) and (max-width:767px) {
+		
+	.promo_pods.blocks .item.small {
+		width:48%; float:left; display:block;
+		}	
+	.promo_pods.blocks .item.small.even {
+		float:right;
+		}	
+		
+	}
+		
+	@media (max-width:767px) {
+		
+	.promo_pods.blocks .item {
+		text-align:center;
+		}
+	.promo_pods.blocks .item.video a {
+		min-height:270px;
+		}
+	.promo_pods.blocks .item.video {
+		min-height:300px;
+		}
+	.promo_pods.blocks .item .link {
+		left:0; right:0;
+		}
+		
+	}	
+                                              
+                            
+/*  ----------------------------------------------------------------------------------------------------
+    8.0 LISTING   
+    ---------------------------------------------------------------------------------------------------- */
+
+	.listing { 
+		overflow:hidden; height:100%;
+		position:relative;
+		padding-top:1em;
+		margin-top:1em;
+		}
+	.listing .item { 
+		overflow:hidden; height:100%;
+		position:relative;
+		display:block;
+		padding-bottom:1em;
+		margin-bottom:1em;
+		}
+	.listing .item a {
+		display:block;
+		text-decoration:none; 
+		}
+	.listing .item .image,
+	.listing .item .info {
+		display:block;
+		overflow:hidden;
+		}
+	.listing .item .image img {
+		display:block;
+		overflow:hidden;
+		}	
+	.listing .item .image {
+		margin-bottom:5px;
+		}		
+	.listing .item p.heading { 
+		display:block;
+		font-size:16px; font-size:1.6rem;
+		padding:0.5em 0;
+		}
+	.listing .item a:hover p.heading {
+		}
+	.listing .item .text {
+		display:block;
+		padding:0 0 1em; 
+		}
+	.listing .item .text a {
+		display:inline;
+		}	
+	.listing .item .info .link {
+		font-size:12px; font-size:1.2rem;
+		}
+	.listing .item .link span {
+		border-width:0 0 1px; border-style:solid;
+		}	
+		
+	@media (min-width:1024px) {
+		
+	.listing .item .image img {
+		
+		-webkit-transition: transform 0.4s ease-in-out;
+		-moz-transition: transform 0.4s ease-in-out;
+		-ms-transition: transform 0.4s ease-in-out;
+		-o-transition: transform 0.4s ease-in-out;
+		transition: transform 0.4s ease-in-out;
+		}
+	.listing .item a:hover .image img {
+		
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+		}
+		
+	}
+		     
+                            
+                            
+/*  --------------------------------------------------
+    8.1 BLOG LISTING   
+    -------------------------------------------------- */
+			
+	.listing.blog {
+		margin:0; padding:0;
+		}
+	.listing.blog .item .heading {
+		padding-top:0.5em;
+		font-size:22px; font-size:2.2rem;
+		}
+
+	div.meta,
+	.listing .item span.price,
+	.listing .item span.rating { 
+		display:block;
+		font-size:12px; font-size:1.2rem; 
+		padding:1em 0;
+		overflow:hidden;
+		height:100%;
+		}
+	div.meta {
+		margin:2em 0 1em;
+		border-width:1px 0 0; border-style:solid;
+		}
+	.item div.meta {
+		border-width:1px 0;
+		}	
+	div.meta div {
+		padding-top:1em;
+		overflow:hidden;
+		height:100%;
+		}
+	div.meta a,
+	.listing .item div.meta a,
+	.listing .item span.price a {
+		display:inline;
+		text-decoration:none;
+		}
+	.listing .item span.price {
+		font-weight:bold;
+		}
+	div.meta span.author,
+	div.meta span.date,
+	div.meta span.comments,
+	div.meta span.categories,
+	.listing .item span.price span.now,
+	.listing .item span.price span.was {
+		display:inline;
+		float:left;
+		margin-right:5px;
+		}
+	div.meta span.comments {
+		float:left;
+		clear:both;
+		}
+	div.meta span.categories {
+		float:right;
+		margin:0;
+		}
+	.listing .item span.price.discount span.now {
+		}
+	.listing .item span.price span.was {
+		text-decoration:line-through;
+		}
+	div.meta span.comments {
+		} 
+			
+	@media (min-width:768px) {
+		
+	.listing.blog .item .image {
+		width:100%;
+		margin-bottom:10px;
+		}
+	.listing.blog .item a:hover .heading,
+	.meta a:hover {
+		-webkit-opacity:0.7;
+		-moz-opacity:0.7;
+		-ms-opacity:0.7;
+		opacity:0.7;
+		}
+		
+	}
+	
+	@media (max-width:767px) {
+		
+	div.meta span.categories {
+		float:left;
+		clear:both;
+		display:block;
+		padding-top:10px;
+		}
+		
+	}   
+                            
+                            
+                            
+/*  --------------------------------------------------
+    8.2 SEARCH LISTING   
+    -------------------------------------------------- */
+			
+		/*
+	.listing.search {
+		border-width:1px 0 0; border-style:solid;
+		}	
+	.listing.search .item {
+		border-width:0 0 1px; border-style:solid;
+		}
+	.listing.search .item.last {
+		border:0 none;
+		}
+		*/
+                            
+                            
+                            
+/*  --------------------------------------------------
+    8.3 SECTION LISTING   
+    -------------------------------------------------- */
+		
+		/*	
+	.listing.section {
+		border-width:1px 0 0; border-style:solid;
+		}	
+	.listing.section .item {
+		border-width:0 0 1px; border-style:solid;
+		}
+	.listing.section .item.last {
+		border:0 none;
+		}
+		*/
+			
+	@media (min-width:768px) {
+		
+	.page_component.listing .item .image,
+	.listing.section .item .image {
+		float:right;
+		margin-left:40px;
+		}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    8.4 GRID LISTING   
+    -------------------------------------------------- */
+			
+	.listing.grid {
+		border:0 none;
+		}
+	.tabbed .listing.grid {
+		margin-bottom:1em;
+		}
+	.listing.grid .item {
+		display:inline-block; vertical-align:top; float:none;
+		border:0 none;
+		padding-bottom:1em;
+		}
+	.listing.grid .item .image,
+	.listing.grid .item .image img {
+		float:none; clear:both;
+		max-width:105px; margin:0 auto;
+		}
+	.listing.grid .item .info {
+		padding:0 0.5em;
+		float:none; clear:both;
+		}
+		
+	@media (min-width:1024px) {
+		
+	.listing.grid .item a .info .link {
+	    transition:opacity 0.25s ease-in-out 0s;
+		}
+	.listing.grid .item a:hover .info .link {
+		opacity:0.6;
+		}
+		
+	}	
+			
+	@media (min-width:768px) {	
+		
+	.listing.grid .item {
+		padding-bottom:2em; 
+		}
+	#mid_col .listing.grid .item {
+		}
+	#left_col .listing.grid .item,
+	#right_col .listing.grid .item {
+		width:48%;
+		}
+	#wide_col .listing.grid .item {
+		width:32%;
+		}
+	.listing.grid .item .image {
+		}
+	.listing.grid .item .image img {
+		}
+	.listing.grid .item .image,
+	.listing.grid .item .info {
+		display:block;
+		}	
+	.listing.grid .item .info {
+		padding:0 1em;
+		}/*
+	.listing.grid .item.bookend-left {
+		clear:both;
+		margin-left:0;
+		}
+	.listing.grid .item.bookend-right {
+		float:right;
+		margin-right:0;
+		}*/
+		
+	}
+	
+	@media (max-width:767px) {
+		
+	.listing .item .image {
+		padding-bottom:10px;
+		}
+	.listing .item div.meta span.categories {
+		float:left;
+		clear:both;
+		display:block;
+		padding-top:5px;
+		}
+		
+	.listing.grid .item.odd {
+		clear:both;
+		float:left;
+		margin-left:0;
+		}
+	.listing.grid .item.even {
+		float:right;
+		margin-right:0;
+		}
+		
+	} 
+	
+	@media (min-width:480px) and (max-width:767px) {
+		
+	.listing.grid .item {
+		width:49%!important;
+		}
+		
+	}
+	
+	@media (max-width:479px) {
+		
+	.listing.grid .item {
+		width:100%!important;
+		margin:0;
+		}
+		
+	}   
+                            
+                            
+                            
+/*  --------------------------------------------------
+    8.5 PROMO POD LISTING   
+    -------------------------------------------------- */
+
+	.promo_pods .item .listing {
+		border:0 none;
+		margin:0; padding:0 0 1em;
+		}
+	.promo_pods .item .listing .heading {
+		padding-top:0;
+		border-width:0 0 1px; border-style:solid;
+		}	
+	.span3 .promo_pods .item .listing .see_all {
+		position:relative; top:auto; right:auto;
+		display:block; margin-top:5px;
+		}
+	.promo_pods .item .listing .item {
+		margin:0.5em 0;
+		padding:0.5em 0;
+		border-width:0 0 1px; border-style:solid;
+		height:auto!important;
+		}
+	.promo_pods .item .listing .item p.heading {
+		font-size:14px; font-size:1.4rem;
+		padding:0;
+		border:0 none;
+		}
+		
+	.promo_pods .item .listing .item div.meta {
+		border:0 none;
+		margin:0;
+		padding:0;
+		} 
+	
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.promo_pods .item .listing .see_all {
+		position:relative; top:auto; right:auto;
+		display:block; margin-top:10px;
+		}
+		
+	}
+
+
+
+/*  ----------------------------------------------------------------------------------------------------
+    9.0 BOX
+    ---------------------------------------------------------------------------------------------------- */
+
+	.box {
+		padding:1em;
+		}
+	
+	@media (min-width:768px) {
+		
+	.box {
+		padding:1.5em;
+		}
+		
+	}  
+
+
+
+/*  ----------------------------------------------------------------------------------------------------
+    10.0 PAGE COMPONENT
+    ---------------------------------------------------------------------------------------------------- */
+
+	.page_component {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		padding:0 0 1em;
+		}
+	.page_component.textblock,
+	.page_component.listing {
+		padding:0;
+		}
+	
+	@media (min-width:768px) {
+		
+	.page_component {
+		padding:0 0 2em;
+		}
+		
+	}  
+
+
+
+/*  --------------------------------------------------
+    10.1 TABBED
+    -------------------------------------------------- */
+
+	.tabbed {
+		}
+	.tabbed nav {
+		position:relative;
+		z-index:1;
+		}
+	.tabbed nav ul {
+		font-size: 16px; font-size: 1.6rem; 
+		}
+	.content.tabbed nav ul {
+		font-size:12px; font-size:1.2rem;
+		}
+	.tabbed nav ul li {
+		display:inline-block;
+		}
+	.tabbed nav ul li {
+		padding:0 2% 0 0;
+		}
+	.content.tabbed nav ul li {
+		padding:0 2%;
+		}
+	.tabbed nav ul li a {
+		display:inline-block;
+		padding:0.5em 0;
+		}
+	.tabbed nav ul li.last a {
+		}
+	.tabbed nav ul li a:hover {
+		}
+	.tabbed nav ul li a.active {
+		position:relative;
+		}
+	.tabbed nav ul li a::after {
+		content:"";
+		display:block;
+		width:20px; height:2px; margin:0.75em 0 0;
+		
+		-webkit-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-moz-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-o-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+	.content.tabbed nav ul li a::after {
+		width:20px;
+		margin:0.75em auto 0;
+		}
+		
+	.tabbed nav ul li a:hover::after {
+		width:30px;
+		}
+		
+	.tabbed nav ul li a.active::after {
+		width:100%;
+		}
+		
+	.tabbed .panes {
+		position:relative;
+		z-index:0;
+		padding:0.5em 0;
+		}
+	.content.tabbed .panes {
+		padding:0;
+		}	
+	.tabbed .panes .pane {
+		}
+		
+	@media (min-width:768px) {
+		
+	.tabbed nav ul li a {
+		padding:1em 0;
+		min-width:60px;
+		}
+		
+	}
+
+
+
+/*  --------------------------------------------------
+    10.2 ACCORDION
+    -------------------------------------------------- */
+
+	.accordion {
+		}
+	.accordion .heading.tab {
+		padding:0;
+		font-size: 16px; font-size: 1.6rem; 
+		}
+	.accordion .tab a {
+		display:block;
+		padding:1em 0;
+		}
+	.accordion .tab a::after {
+		content:"";
+		display:block;
+		width:20px; height:2px; margin:0.75em 0 0;
+		
+		-webkit-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-moz-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-o-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+	.accordion .tab a:hover {
+		}
+	.accordion .tab a.active {
+		border-bottom:0 none;
+		position:relative;
+		}
+		
+	.accordion .tab a:hover::after {
+		width:30px;
+		}
+	.accordion .tab a.active::after {
+		width:100%;
+		}
+	.accordion .pane {
+		padding:0;
+		} 
+		
+	@media (min-width:768px) {
+		
+	.accordion .tab a {
+		padding:1em 0;
+		}
+		
+	}	 
+
+
+
+/*  --------------------------------------------------
+    10.3 QUOTES
+    -------------------------------------------------- */
+
+	.quotes {
+		}  
+	.quotes blockquote {
+		margin-bottom:0;
+		padding:1em 2em;
+		}  
+	.quotes blockquote p {
+		padding-bottom:0.5em;
+		font-size:24px; font-size:2.4rem;
+		}
+	.promo_pods .quotes blockquote p {
+		font-size:18px; font-size:1.8rem;
+		}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    10.4 IMAGES             
+    -------------------------------------------------- */
+                            
+	.page_component.image {
+		padding:0;
+		margin-bottom:1em;
+		}                
+	.page_component.image img { 
+		display:block;
+		overflow:hidden;
+		max-width:100%;
+		height:auto; 
+		}           
+	.page_component.image .info {
+		position:absolute; top:auto; right:0; bottom:0; left:0;
+		}
+	.page_component.image .info .text {
+		padding:10px;
+		font-size:11px; font-size:1.1rem;
+		}
+	.page_component.image .info .text p {
+		padding:0;
+		}
+			
+	@media (min-width:768px) {    
+		         
+	.page_component.image.right { 
+		float:right;
+		margin-left:1em;
+		}                
+	.page_component.image.left { 
+		float:left;
+		margin-right:1em;
+		} 
+		
+	}
+	
+	@media (max-width:767px) {
+	
+	.page_component.image {
+		}         
+	.page_component.image .text {
+		display:block;
+		position:relative;
+		right:auto;
+		bottom:auto;
+		left:auto;
+		}
+		
+	}
+	
+
+                            
+/*  --------------------------------------------------
+    10.5 GALLERY        
+    -------------------------------------------------- */
+	
+	.gallery { 
+		}
+	.gallery p.heading {
+		}
+	.gallery .item { 
+		overflow:hidden;
+		float:left;
+		display:inline;
+		margin:0 1% 1.5em 1%;
+		}
+	.gallery .item a {
+		position:relative;
+		display:block;
+		}
+	.gallery .item img {
+		display:block;
+		overflow:hidden;
+		width:100%;
+		}
+	.gallery .item a .overlayicon {
+		display:block;
+		position:absolute;
+		top:0; right:0; bottom:0; left:0;	
+		text-align:center;
+		}
+	.gallery .item a .overlayicon i {
+		margin-top:22.5%;
+		}
+			
+	@media (min-width:768px) {
+
+	#mid_col .gallery .item {
+		width:49%;
+		}
+	#left_col .gallery .item, 
+	#right_col .gallery .item {
+		width:32%;
+		}
+	#wide_col .gallery .item {
+		width:23.5%;
+		}
+	.gallery .item.bookend-left { 
+		margin-left:0;
+		clear:both;
+		}
+	.gallery .item.bookend-right {
+		margin-right:0;
+		float:right;
+		}
+	.gallery .item a img {
+		}
+		
+	.gallery .item a img {
+		
+		-webkit-transition: transform 0.4s ease-in-out;
+		-moz-transition: transform 0.4s ease-in-out;
+		-ms-transition: transform 0.4s ease-in-out;
+		-o-transition: transform 0.4s ease-in-out;
+		transition: transform 0.4s ease-in-out;
+		}
+	.gallery .item a:hover img {
+		
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+		transform: scale(1.3);
+		}
+		
+	}
+	
+	@media (max-width:767px) {
+
+	.gallery .item {
+		width:49%!important;
+		}
+	.gallery .item.odd {
+		margin-left:0;
+		clear:both;
+		}
+	.gallery .item.even {
+		float:right;
+		margin-right:0;
+		}
+	.gallery .item.even a {
+		}
+	.gallery .item a img {
+		width:100%;	
+		}
+		
+	}
+        
+                            
+                            
+/*  --------------------------------------------------
+    10.6 RESOURCES         
+    -------------------------------------------------- */
+
+	.resources { 
+		}
+	.resources .item { 
+		overflow:hidden;
+		height:100%;
+		padding:1em 0;
+		}	
+	.resources .item a { 
+		display:block;
+		text-decoration:none;
+		}
+	.resources .item p.heading { 
+		display:block;
+		padding:0 0 0.5em;
+		font-size: 16px; font-size: 1.6rem; 
+		}
+	.resources .item a:hover p.heading {
+		}
+	.resources .item p.heading::after {
+		content:"";
+		display:block;
+		width:20px; height:2px; margin:0.75em 0;
+		
+		-webkit-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-moz-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-ms-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		-o-transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		transition: width 0.25s ease-in-out, background-color 0.25s ease-in-out;
+		}
+		
+	.resources .item a:hover p.heading::after {
+		width:30px;
+		}
+	.resources .item .text {
+		display:block;
+		}
+	.resources .item .text p {
+		padding:0;
+		}
+	.resources .item .size { 
+		display:block;
+		font-style:italic;
+		padding:0;
+		font-size:11px; font-size:1.1rem;
+		}
+	
+	@media (min-width:768px) {
+		
+	.resources .item a { 
+		}
+		
+	}
+
+
+
+/*  --------------------------------------------------
+    10.7 TABLES
+    -------------------------------------------------- */
+
+	table { 
+		width:100%; 
+		margin: 0 0 2em; 
+  
+	    border-collapse: separate;
+	    *border-collapse: collapse; /* IE7 and lower */
+	    border-spacing: 0;  
+	
+		/*
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		border-radius: 5px; 
+		*/
+		}
+	.page_component.tables table {
+		margin-bottom:0;
+		}	
+	
+	table thead { 
+		}
+	table tr th,
+	table tr td { 
+		padding:1em;
+		text-align:left;
+		}
+	table thead tr th,
+	table tfoot tr td { 
+		}
+	table thead tr th.first, 
+	table tfoot tr td.first { 
+		border-left: none; 
+		}
+	table thead tr th.last, 
+	table tfoot tr td.last { 
+		border-right: none; 
+		}
+
+	table tbody tr.even td { 
+		}
+	table tbody tr td { 
+		vertical-align: top; 
+		border: none; 
+		}
+
+	table#fancybox-title-float-wrap,
+	table#fancybox-title-float-wrap tr th,
+	table#fancybox-title-float-wrap tr td {
+		background:none!important;
+		}
+	
+	@media (min-width:768px) {
+		
+	table tr th,
+	table tr td { 
+		padding:1em 2em;
+		}
+		
+	}
+                            
+                            
+                            
+/*  --------------------------------------------------
+    10.8 COMMENTS            
+    -------------------------------------------------- */
+
+	div.comments {
+		}
+
+
+                            
+/*  --------------------------------------------------
+    10.9 AUTHOR BIO
+    -------------------------------------------------- */
+	
+	.author_bio {
+		}
+	.author_bio p.heading {
+		font-size: 12px; font-size: 1.2rem; 
+		}
+	.author_bio {
+		padding:1em;
+		}
+	.author_bio .info p.heading {
+		padding-top:0;
+		font-size: 16px; font-size: 1.6rem; 
+		}
+	.author_bio .info .text p {
+		padding:0;
+		}
+	
+	@media (min-width:768px) {
+		
+	.author_bio {
+		padding:1.5em;
+		}
+		
+	}
+	
+	
+	
+/*  --------------------------------------------------
+	10.10 IMAGE SLIDESHOW
+    -------------------------------------------------- */
+	
+	.slideshow {
+		}
+	.slideshow .item {
+		display:block;
+		}
+	.slideshow .item .image {
+		}
+	.slideshow .item .image img {
+		display:block;
+		overflow:hidden;
+		}
+	.slideshow .item .info {
+		}
+	.slideshow .item .info .text { 
+		position:absolute;
+		padding:1em;
+		right:0;
+		bottom:0;
+		left:0;
+		font-size:11px; font-size:1.1rem;
+		}
+		                            
+                            
+                            
+/*  --------------------------------------------------
+    10.11 PRICING TABLES       
+    -------------------------------------------------- */
+
+	.pricing_tables {
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		margin:0 auto;
+		padding:1em 0;
+		}	
+	.pricing_tables ol {
+		padding:0;
+		border-width:0 0 3px; border-style:solid;
+		}
+	.pricing_tables ol li {
+		display:block;
+		padding:1em;
+		border-width:1px 1px 0; border-style:solid;
+		}
+	.pricing_tables ol li.title,
+	.pricing_tables ol li.price,
+	.pricing_tables ol li.desc,
+	.pricing_tables ol li.first {
+		}
+	.pricing_tables ol li.title {
+		padding-top:1em; padding-bottom:1em;
+		}
+	.pricing_tables ol li.price {
+		padding:0.25em 0;
+		font-size:72px; font-size:7.2rem;
+		}
+	.pricing_tables ol li.price sup {
+		font-size:60%;
+		}
+	.pricing_tables ol li.price em {
+		font-style:normal;
+		}
+	.pricing_tables ol li.desc {
+		font-style:italic;
+		}
+	.pricing_tables ol li.feature {
+		}
+	.pricing_tables ol li.link {
+		padding-top:1.5em; padding-bottom:1.5em;
+		}
+	.pricing_tables ol li div {
+		}
+	.pricing_tables ol li div span {
+		}
+	.pricing_tables ol li.grey {
+		text-decoration:line-through;
+		
+		-webkit-opacity:0.5;
+		-moz-opacity:0.5;
+		-ms-opacity:0.5;
+		-o-opacity:0.5;
+		opacity:0.5;
+		}	
+		
+	@media (min-width:768px) {
+		
+	.pricing_tables {
+		padding:3em 0;
+		}		
+		
+	}	
+		
+	@media (max-width:767px) {
+		
+	.pricing_tables .table {
+		padding-bottom:2em;
+		}		
+		
+	}	
+
+
+                            
+/*  ----------------------------------------------------------------------------------------------------
+    11.0 FORMS
+    ---------------------------------------------------------------------------------------------------- */
+	
+	fieldset {	
+		padding:0 0 1em;
+		margin:0 0 1em;
+		position:relative;
+		}
+	
+	fieldset.buttons {
+		padding-top:0;
+		border-bottom:0 none;
+		}
+
+	fieldset .row {
+		padding:0;
+		}
+	
+	/* GENERAL FIELDS */	
+	fieldset .general {
+		display:block;
+		padding:0.5em 0;
+		position:relative;
+		overflow:hidden;
+		height:100%;
+		}
+	fieldset .general label {
+		display:block;
+		padding:0 0 0.5em;	
+		}	
+	
+	fieldset div.general span.wrap {
+		position:relative;	
+		display:block;
+		}		
+	
+	fieldset div.general input,
+	fieldset div.general select,
+	fieldset div.general textarea {
+		border-width:1px; border-style:solid;
+		padding:0.75em 1em;
+		display:block;
+		width:100%;
+		vertical-align: middle;
+		}
+	fieldset div.general input,
+	fieldset div.general select {
+		min-height:40px;
+		}
+	fieldset .general input:focus,
+	fieldset .general select:focus,
+	fieldset .general textarea:focus {
+		}
+		
+	/* CHECKBOX & RADIO BUTTONS */	
+	fieldset .checkbox {	
+		padding:0.5em 0;
+		display:block;
+		margin-top:5px;
+		overflow:hidden;
+		height:100%;
+		}	
+	fieldset .radiobutton {	
+		padding:0.5em 0;
+		display:block;
+		margin-top:0.5em;
+		overflow:hidden;
+		height:100%;
+		}	
+	fieldset .general label,
+	fieldset .checkbox label,
+	fieldset .radiobutton label {
+		display:block;
+		padding:0 0 0.5em;	
+		}
+	fieldset .checkbox label.options,
+	fieldset .radiobutton label.options {
+		cursor:default;
+		}
+	fieldset .checkbox ul,
+	fieldset .radiobutton ul {
+		}
+	fieldset .checkbox ul li,
+	fieldset .radiobutton ul li {
+		padding:0.7em 0 0.3em;
+		margin:0;
+		}
+	fieldset .checkbox ul li.first,
+	fieldset .radiobutton ul li.first {
+		}
+	fieldset .checkbox ul li.last,
+	fieldset .radiobutton ul li.last {
+		border-bottom:0 none;
+		}
+	fieldset .checkbox ul li.odd,
+	fieldset .radiobutton ul li.odd {
+		}
+	fieldset .checkbox ul li.even,
+	fieldset .radiobutton ul li.even {
+		}
+	fieldset .checkbox ul li label,
+	fieldset .radiobutton ul li label {
+		}
+	fieldset .checkbox input,
+	fieldset .radiobutton input {
+		display:inline;
+		float:left;
+		margin:0.05em 0.5em 0 0;
+		padding:0;	
+		border:0 none;
+		background:auto;
+		}
+		
+
+	/* NOTES */
+	fieldset label em.req {
+		font-style:normal;
+		}
+	fieldset span.note {
+		display:block;
+		font-size:12px; font-size:1.2rem;
+		padding:0.5em 0 0;
+		}
+
+	
+	/* VALIDATION */
+	fieldset div.general span.field-validation-error,
+	fieldset .error span.req {
+		padding:0.5em;
+		display:block;
+		font-size:12px; font-size:1.2rem;
+		}
+	fieldset div.general input.input-validation-error,
+	fieldset div.general select.input-validation-error,
+	fieldset div.general textarea.input-validation-error,
+	fieldset .error span.wrap input,
+	fieldset .error span.wrap select,
+	fieldset .error span.wrap textarea,
+	fieldset .error ul {
+		}	
+	fieldset .checkbox.error span.wrap {	
+		}
+	
+	/* SITE SEARCH */	
+	.site_search fieldset {
+		padding:0; margin:0;
+		}
+	.site_search fieldset div.general {
+		padding:0;
+		}
+	.site_search fieldset div.general input {
+		height:40px;
+		padding:0 1em;
+		}
+	.site_search fieldset button.button {
+		margin:0;
+		position:absolute; top:1px; right:1px; z-index:5;
+		width:38px; height:38px;
+		display:block;
+		}
+	.site_search fieldset button.button span {
+		padding:0;
+		display:block;
+		}
+		
+	
+	/* NEWSLETTER */
+	footer .newsletter fieldset {
+		padding:0;
+		}
+	footer .newsletter fieldset .general label {
+		display:none;
+		}
+	footer .newsletter fieldset div.general input {
+		height:40px;
+		}
+		
+		
+	/* LOGIN */		
+	.navigation nav.top ul li.login div.form fieldset {
+		padding:0; margin:0;
+		}
+	.navigation nav.top ul li.login div.form fieldset.buttons {
+		padding-top:1em;
+		}
+	.navigation nav.top ul li.login div.form fieldset .checkbox,
+	.navigation nav.top ul li.login div.form fieldset .checkbox ul li {
+		padding:0;
+		}	
+	.navigation nav.top ul li .link {
+		padding:1em 0;
+		}
+	.navigation nav.top ul li .link a {
+		padding:0; height:auto;
+		}
+	
+	
+	@media (min-width:1024px) {
+		
+	}
+	
+	
+	@media (max-width:1023px) {
+		
+	}
+			
+	@media (min-width:768px) {
+			
+	footer .site_search {
+		padding-bottom:1.5em;
+		}
+		
+	}
+	
+	@media (max-width:767px) {
+			
+	footer .site_search {
+		padding-bottom:2em;
+		}
+		
+	}
+		              
+                            
+                            
+/*  --------------------------------------------------
+    11.1 BUTTONS         
+    -------------------------------------------------- */
+	
+	span.button a,
+	button.button {
+		display:inline-block;
+		margin:0 0.5em 0.5em 0;
+		/* IE7 */
+		zoom:1;
+		*display:inline;
+		color:#fff;
+		text-align:center;
+		border-width:1px; border-style:solid;
+		text-decoration:none!important;
+		
+		-webkit-border-radius:25px;
+		-moz-border-radius:25px;
+		-ms-border-radius:25px;
+		-o-border-radius:25px;
+		border-radius:25px;
+		}
+		
+	/* SIZE */	
+	span.button.block a,
+	button.button.block {
+		width:100%;
+		display:block;
+		margin-right:0;
+		}
+		
+	span.button.small a,
+	button.button.small {
+		font-size:12px; font-size:1.2rem;
+		}
+	span.button.big a,
+	button.button.big {
+		}
+		
+	span.button.right a,
+	button.button.right {
+		float:right;
+		margin-right:0;
+		margin-left:10px;
+		}
+	
+	/* PADDING */	
+	span.button a span,
+	button.button span {
+		padding:0.35em 1.5em;
+		display:inline-block;
+		}
+	span.button.small a span,
+	button.button.small span {
+		padding:0.35em 1.5em;
+		}
+	span.button.big a span,
+	button.button.big span {
+		padding:0.35em 2.5em;
+		}	
+	span.button a:hover,
+	button.button:hover {
+		background-image:none;
+		}
+	span.button.big a:hover,
+	button.button.big:hover {
+		}
+		
+	
+	/* ACTIVE */
+	span.button a:active,
+	button.button:active {
+		position:relative;
+		top:1px;
+		
+		box-shadow:none;
+		}
+		
+	@media (min-width:1024px) {
+		
+	span.button a,
+	button.button {
+		
+		-webkit-transition: box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+		-moz-transition: box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+		-ms-transition: box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+		-o-transition: box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+		transition: box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+		}
+	span.button a:hover,
+	button.button:hover {
+		
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		-ms-border-radius:0;
+		-o-border-radius:0;
+		border-radius:0;
+		}
+		
+	}	
+		
+	@media (max-width: 767px) {
+		
+	span.button a,
+	button.button {
+		clear:both;
+		float:none!important;
+		margin:0 0 1em!important;
+		}
+	button.button { 
+		}
+	span.button a span,
+	button.button span {
+		display:block;
+		}
+	
+	}
+	
+
+                            
+/*  --------------------------------------------------
+    11.2 AJAX LOADING         
+    -------------------------------------------------- */
+
+	.ajax_wrap {
+		position:relative;
+		width:100%;
+		height:100%;
+		}
+	.ajax_wrap .ajax_loading {
+	  	position:absolute;
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		z-index:10;
+		} 
+	.ajax_wrap .ajax_loading .loading {
+		margin:0;
+		position:relative;
+		text-align:center;
+		display:table;
+		width:100%;
+		height:100%;
+		}
+	.ajax_wrap .ajax_loading .loading span.message {
+		display:table-cell;
+		width:100%;
+		height:100%;
+		text-indent:-9999px;
+		vertical-align:middle;
+		background-repeat:no-repeat;
+		background-position:center;
+		}
+
+
+
+/*  --------------------------------------------------
+    11.3 ALERTS
+    -------------------------------------------------- */
+
+	.alert_box {
+		padding:1em 35px 1em 1em;
+		margin:1em 0;
+		position:relative;
+		
+    	-webkit-border-radius: 5px;
+    	-moz-border-radius: 5px;
+    	border-radius: 5px;
+		}
+	.alert_box p {
+		padding:0;
+		}
+	.alert_box a.close {
+		position:absolute;
+		right:10px;
+		top:10px;
+    	font-size: 18px; font-size: 1.8rem;
+		text-decoration:none!important;
+		font-weight:bold;
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+		filter: alpha(opacity=20);
+		-moz-opacity: 0.2;
+		-khtml-opacity: 0.2;
+    	opacity: 0.2;
+		}
+	.alert_box a:hover {
+
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+		filter: alpha(opacity=50);
+		-moz-opacity: 0.5;
+		-khtml-opacity: 0.5;
+    	opacity: 0.5;
+		}
+
+
+
+/*  --------------------------------------------------
+    11.4 COOKIES
+    -------------------------------------------------- */
+
+	.cookies {
+		padding:1em;
+		position:fixed; right:0; bottom:0; left:0;
+		z-index:100;
+		box-shadow:0 0 20px 0 rgba(0,0,0,0.2);
+		}
+	.cookies p.link {
+		padding:0;
+		}
+	.cookies a.close {
+		position:absolute; top:0; right:0;
+    	font-size: 18px; font-size: 1.8rem;
+		text-decoration:none!important;
+		font-weight:bold;
+		}
+	.cookies a.close:hover {
+
+		-webkit-opacity: 0.7;
+		-moz-opacity: 0.7;
+		-ms-opacity: 0.7;
+    	opacity: 0.7;
+		}
+		
+	@media (min-width:1024px) {
+		
+	.cookies {
+		padding:2em;
+		}
+		
+	}	
+		
+	@media (min-width:768px) and (max-width:1023px) {
+		
+	.cookies {
+		padding:1.5em;
+		}
+		
+	}
+
+
+
+/*	--------------------------------------------------
+	END
+	-------------------------------------------------- */
+	
+	
