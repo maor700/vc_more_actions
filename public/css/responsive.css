@@ -40,8 +40,8 @@
     left: 25%;
     max-width: none;
  }
- #circles-secion .item .info{
-  
+ #circles-secion .item .info .heading{
+    font-size: 1.225em;
  }
 
 }
