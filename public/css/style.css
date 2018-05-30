@@ -39,6 +39,7 @@ body.dev-mode{
 background-image:  url(../media/0000/links_box_bg.jpg);
  -webkit-background-size: cover;
  background-size: url(../media/0000/links_box_bg.jpg);
+ background-repeat: no-repeat;
  
  padding: 5em 0;
 }
@@ -54,7 +55,28 @@ background-image:  url(../media/0000/links_box_bg.jpg);
 #boxes-section .listing.grid{
  padding: 2em 0;
 }
+
+/*
+.flexbox #boxes-section .listing.grid{
+ display: flex;
+ flex-wrap: wrap;
+}
+.flexbox #boxes-section .listing.grid .item{
+ height: auto;
+}
+*/
+
+#boxes-section .table-strct-con{
+ display: table;
+ border-spacing: 14px 7px;
+}
+
+#boxes-section .table-strct-con.half {
+    max-width: 50.8%;
+}
+
 #boxes-section .listing.grid .item {
+ display: table-cell;
  width: 47%;
  margin: 0.5em;
  min-height: 300px;
@@ -83,6 +105,8 @@ background-image:  url(../media/0000/links_box_bg.jpg);
  padding: 0.8em 0 0 0;
  padding-left: 1.5em;
 }
+
+
 
 .box-con ul .link{
  font-size: 1em;

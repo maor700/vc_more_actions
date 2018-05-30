@@ -13,14 +13,14 @@
   max-width: none;
  }
 
-#circles-secion{
- font-size: 0.8em;
-}
+ #circles-secion{
+  font-size: 0.8em;
+ }
  #circles-secion h2{
   font-size: 3em;
   padding-bottom: 0.1em;
  }
- 
+
  #circles-secion .item{
   width: 32%!important;
   float: none;
@@ -35,22 +35,30 @@
  }
  #circles-secion .item .image img{
   width: 50%;
-    position: absolute;
-    top: 8%;
-    left: 25%;
-    max-width: none;
+  position: absolute;
+  top: 8%;
+  left: 25%;
+  max-width: none;
  }
  #circles-secion .item .info .heading{
-    font-size: 1.225em;
+  font-size: 1.225em;
  }
 
 }
 @media (max-width: 767px) and (min-width: 320px){
  #boxes-section .listing.grid .item {
+  display: inline-block;
   width: 100%!important;
   clear: both;
   float: none;
   min-height: auto;
+ }
+ #boxes-section .table-strct-con{
+  display: inline-block;
+ }
+ #boxes-section .table-strct-con.half {
+  max-width: none;
+  width: 100%!important;
  }
  #recommended-con{
   text-align: center;
