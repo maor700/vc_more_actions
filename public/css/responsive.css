@@ -11,10 +11,17 @@
  #recommended-con .card-con{
   width: 47%;
   max-width: none;
+  text-align: center;
  }
 
  #recommended-con .card-con img{
-     width: 100%;
+     width: 60%;
+     display: inline-block;
+ }
+ #recommended-con .card-con .text{
+    width: 60%;
+    display: inline-block;
+     text-align: right;
  }
 
  #circles-secion{
