@@ -13,6 +13,10 @@
   max-width: none;
  }
 
+ #recommended-con .card-con img{
+     width: 100%;
+ }
+
  #circles-secion{
   font-size: 0.8em;
  }
@@ -52,6 +56,14 @@
   clear: both;
   float: none;
   min-height: auto;
+
+ }
+ #boxes-section {
+     padding-bottom: 1em;
+     padding-top: 2em;
+ }
+ #boxes-section .listing.grid{
+     padding-top: 0;
  }
  #boxes-section .table-strct-con{
   display: inline-block;
@@ -73,7 +85,6 @@
  }
 
  .box-con .img-con {
-
   padding: 1em;
   padding-top: 1em;
   width: 15%;

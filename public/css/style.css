@@ -134,6 +134,11 @@ background-image:  url(../media/0000/links_box_bg.jpg);
  padding-bottom: 1.5em;
  display: inline-block;
  margin: 1em .4em;
+ vertical-align: top;
+}
+
+.cards-con .card-con h3{
+  color: inherit;
 }
 
 .card-con .text {

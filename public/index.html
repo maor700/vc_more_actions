@@ -43,6 +43,9 @@
   <link href="/assets/Handyman/css/palette.css" rel="stylesheet">
   <link href="/css/calonline.css" rel="stylesheet">
   <link href="/css/bcs_cal.css?v=1" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/responsive.css">
 
@@ -109,9 +112,9 @@
       <div class="container">
 
        <div class="more-actions">
-        <h2>פעולות נפוצות</h2>
+        <!-- <h2>פעולות נפוצות</h2> -->
         <div class="sub-title">
-         מגוון פעולות שירות שניתן לבצע בקלות ובמהירות
+        הפעולות שהכי צריך, בלי לחפש ובלי להמתין לנציג
         </div>
        </div>
 
@@ -304,8 +307,8 @@
              </a>
             </li>
             <li class="link">
-             <a href="#">
-              ? עיצוב כרטיס
+             <a href="https://design.cal-online.co.il/#/homedesk">
+              עיצוב כרטיס
              </a>
             </li>
            </ul>
@@ -339,12 +342,6 @@
              <a href="https://www.cal-online.co.il/ecredit/fixed-monthly-charge/
                       ">
               פריסת החיוב החודשי
-             </a>
-            </li>
-            <li class="link">
-             <a href="https://www.cal-online.co.il/goingabroad/payment-spread/
-                      ">
-              ? פריסה לתשלומים של קניות אונליין
              </a>
             </li>
             <li class="link">
@@ -459,34 +456,34 @@
      <div class="section content" id="recommended-con">
       <div class="container">
        <h2>המומלצים שלנו</h2>
-       <div class="cards-con">
-        <div class="card-con">
+       <div class="cards-con" dir="rtl">
+        <a src="#" class="card-con">
          <img src="media/0000/card_1.jpg" alt="">
          <div class="text">
           <h3>ארנק דיגיטלי Cal4U</h3>
           <p>
-           אפליקציית הארנק הדיגיטלי שלנו באמצעות בחירת התמונה המועדפת עליך
+                מידע אישי וביצוע פעולות בקלות ובמהירות, בכל שעה ומכל מקום
           </p>
          </div>
-        </div>
-        <div class="card-con">
+        </a>
+        <a src="#" class="card-con">
          <img src="media/0000/card_2.jpg" alt="">
          <div class="text">
           <h3>כרטיס אשראי מעוצב</h3>
           <p>
-           אפליקציית הארנק הדיגיטלי שלנו באמצעות בחירת התמונה המועדפת עליך
+                כרטיס אשראי בעיצוב אישי עם התמונה שהכי אהבת 
           </p>
          </div>
-        </div>
-        <div class="card-con">
+        </a>
+        <a href="#" class="card-con">
          <img src="media/0000/card_3.jpg" alt="">
          <div class="text">
           <h3>דפי פירוט דיגיטליים</h3>
           <p>
-           אפליקציית הארנק הדיגיטלי שלנו באמצעות בחירת התמונה המועדפת עליך
+                בלי לחכות לדואר: מקבלים את דפי הפירוט החודשי ישירות למייל
           </p>
          </div>
-        </div>
+        </a>
 
        </div>
       </div>
@@ -498,12 +495,59 @@
     </div>
    </section>
    <!-- end of main content -->
-
+   <script src="/assets/Handyman/js/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <!-- GA -->
+   <script defer>
+           $('#more-actions a').on('mousedown', function(ev){
+                sendGA('פעולות נפוצות', $(this).text);
+           });
+           $('#boxes-section a').on('mousedown', function(ev){
+                sendGA('כל הפעולות והשירותים במקום אחד', $(this).text());
+           });
+           $('#recommended-con a').on('mousedown', function(ev){
+                sendGA('המומלצים שלנו', $(this).find('h3').text());
+           });
+           function sendGA(eventAction, eventLabel){
+                   console.log(eventAction, eventLabel);
+                ga('send', 'event', {eventCategory:  'שירות ופעולות' , eventAction: eventAction, eventLabel: eventLabel});
+           }
+   </script>
+   <script defer>
+        $('.cards-con').slick({
+        rtl: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        prevArrow: '<div class="slick-prev" style="display: table;color:#005288;"><i class="fa fa-chevron-left fa-2x"></i></div>',
+        nextArrow: '<div class="slick-next" style="display: table;color:#005288;"><i class="fa fa-chevron-right fa-2x"></i></div>',
+        responsive: [
+                        {
+                        breakpoint: 600,
+                                settings: {
+                                        slidesToShow: 1,
+                                        slidesToScroll: 1,
+                                        infinite: true,
+                                        dots: true
+                                }
+                        },
+                        // {
+                        // breakpoint: 480,
+                        //         settings: {
+                        //                 slidesToShow: 1,
+                        //                 slidesToScroll: 1
+                        //         }
+                        // }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                ]
+        });
+   </script>
 
   </div>
 
 
-  <script src="/assets/Handyman/js/jquery.min.js"></script>
   <script src="/assets/Handyman/js/modernizr.js" aria-hidden="true"></script>
  </body>
 
