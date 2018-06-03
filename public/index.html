@@ -107,7 +107,7 @@
 
    <!-- main content -->
    <section id="more-actions-page" class="grid lightgray_bg">
-    <div class="grid-section" id="circles-section">
+    <div class="grid-section">
      <div class="section section-2 content text_center" id="circles-secion">
       <div class="container">
 
@@ -245,7 +245,7 @@
              </a>
             </li>
             <li class="link">
-             <a href="#">
+             <a href="https://digital.cal-online.co.il/he-il/Cal/CalServices/DebtPayment/Pages/OnlineCollectionLogin.aspx">
               תשלום חוב
              </a>
             </li>
@@ -293,16 +293,13 @@
               חסימת כרטיס שנגנב או אבד
              </a>
             </li>
-            <!--      https://www.cal-online.co.il/self-service/blockyourcard/     -->
             <li class="link">
-             <a href="https://services.cal-online.co.il/Card-Holders/Screens/Debits/DirectDebitTransfer.aspx">
+             <a href="https://www.cal-online.co.il/self-service/replacedamagedcard/">
               החלפת כרטיס פגום
              </a>
             </li>
-            <!--           
--->
             <li class="link">
-             <a href="https://www.cal-online.co.il/self-service/replacedamagedcard/">
+             <a href="https://www.cal-online.co.il/cards/">
               הנפקת כרטיס חדש
              </a>
             </li>
@@ -357,8 +354,7 @@
              </a>
             </li>
             <li class="link">
-             <a href="https://www.cal-online.co.il/ecredit/
-                      ">
+             <a href="https://services.cal-online.co.il/Card-Holders/SCREENS/AccountManagement/Login.aspx?ReturnUrl=%2fCard-Holders%2fScreens%2fLoans%2fLoan.aspx">
               קבלת הלוואה
              </a>
             </li>
@@ -415,8 +411,7 @@
            </div>
            <ul>
             <li class="link">
-             <a href="https://cal4u.cal-online.co.il/digitalwallet/#!/digital/vouchers/info
-                      ">
+             <a href="https://cal4u.cal-online.co.il/digitalwallet/#!/digital/vouchers/info">
               שוברים דיגיטליים באפליקציה
              </a>
             </li>
@@ -457,7 +452,7 @@
       <div class="container">
        <h2>המומלצים שלנו</h2>
        <div class="cards-con" dir="rtl">
-        <a src="#" class="card-con">
+        <a href="https://www.cal-online.co.il/self-service/cal4u/" class="card-con">
          <img src="media/0000/card_1.jpg" alt="">
          <div class="text">
           <h3>ארנק דיגיטלי Cal4U</h3>
@@ -466,7 +461,7 @@
           </p>
          </div>
         </a>
-        <a src="#" class="card-con">
+        <a href="https://design.cal-online.co.il/#/homedesk" class="card-con">
          <img src="media/0000/card_2.jpg" alt="">
          <div class="text">
           <h3>כרטיס אשראי מעוצב</h3>
@@ -475,7 +470,7 @@
           </p>
          </div>
         </a>
-        <a href="#" class="card-con">
+        <a href="https://www.cal-online.co.il/self-service/cal-mail/" class="card-con">
          <img src="media/0000/card_3.jpg" alt="">
          <div class="text">
           <h3>דפי פירוט דיגיטליים</h3>
@@ -499,18 +494,26 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
    <!-- GA -->
    <script defer>
-           $('#more-actions a').on('mousedown', function(ev){
-                sendGA('פעולות נפוצות', $(this).text);
+           $('#circles-secion a').on('mousedown', function(ev){
+                sendGA('הפעולות שהכי צריך, בלי לחפש ובלי להמתין לנציג', $(this).text());
            });
            $('#boxes-section a').on('mousedown', function(ev){
                 sendGA('כל הפעולות והשירותים במקום אחד', $(this).text());
            });
            $('#recommended-con a').on('mousedown', function(ev){
-                sendGA('המומלצים שלנו', $(this).find('h3').text());
+                sendGA('המומלצים שלנו', $(this).find('.text h3').text());
            });
            function sendGA(eventAction, eventLabel){
+                eventLabel = _cleanSpaces(eventLabel);
+                eventAction = _cleanSpaces(eventAction);
                    console.log(eventAction, eventLabel);
                 ga('send', 'event', {eventCategory:  'שירות ופעולות' , eventAction: eventAction, eventLabel: eventLabel});
+           }
+           function _cleanSpaces(str){
+                  str = str.trim();
+                  str = str.replace(/(\r\n\t|\n|\r\t)/gm,"");
+                  str = str.replace(/(\s+)/gm, ' ');
+                  return str;
            }
    </script>
    <script defer>
